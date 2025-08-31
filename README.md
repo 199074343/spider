@@ -84,6 +84,7 @@ class CustomSpider(Spider):
 
 ## 功能特性
 
+### 🌐 Web爬虫功能
 - 异步并发爬取
 - 自动重试机制
 - 多种输出格式（JSON、CSV、Excel）
@@ -93,9 +94,42 @@ class CustomSpider(Spider):
 - 图片链接提取
 - 用户代理轮换
 
+### 📱 移动端爬虫功能 (新增)
+- **Android模拟器集成** - 自动管理Android虚拟设备
+- **Appium自动化** - 支持移动应用和移动浏览器
+- **移动端数据爬取** - 原生应用界面操作和数据提取
+- **截图记录** - 自动截图记录爬取过程
+- **滚动收集** - 支持列表滚动和无限加载数据收集
+- **移动浏览器支持** - 通过Chrome浏览器爬取移动网站
+
 ## 示例运行
 
+### Web爬虫
 ```bash
 # 运行示例爬虫
 python example_spider.py
+
+# 命令行方式
+python main.py --target example_site --workers 5 --debug
 ```
+
+### 移动端爬虫 (新增)
+```bash
+# 环境检查和设置
+python setup_mobile.py                    # 安装移动端依赖
+python mobile_tools.py check              # 检查环境
+python mobile_tools.py start-appium       # 启动Appium服务器
+
+# 运行移动端爬虫
+python main.py --target mobile_app --mobile --debug        # 移动应用爬虫
+python main.py --target mobile_browser --mobile --debug    # 移动浏览器爬虫
+
+# 运行移动端示例
+python example_mobile_spider.py           # 移动应用示例
+python example_mobile_spider.py browser   # 移动浏览器示例
+
+# 测试移动端集成
+python test_mobile_integration.py         # 完整集成测试
+```
+
+详细的移动端使用说明请参考 [MOBILE_README.md](MOBILE_README.md)

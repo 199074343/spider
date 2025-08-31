@@ -11,10 +11,12 @@ import tempfile
 import os
 from pathlib import Path
 
-from test_framework import TestCase, create_test_suite
-from mocks import MockLogger, MockHttpSession, MockHttpResponse, TestDataGenerator
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from tests.test_framework import TestCase, create_test_suite
+from tests.mocks import MockLogger, MockHttpSession, MockHttpResponse, TestDataGenerator
 from utils.data_processor import DataProcessor
 from utils.storage import Storage
 from utils.request_handler import RequestHandler

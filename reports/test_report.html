@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爬虫项目测试报告</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .summary-card { background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center; }
+        .summary-card h3 { margin: 0 0 10px 0; color: #333; }
+        .summary-card .value { font-size: 2em; font-weight: bold; color: orange; }
+        .suite-results { margin-bottom: 30px; }
+        .suite { background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 20px; }
+        .suite-header { background: #f8f9fa; padding: 15px; border-bottom: 1px solid #ddd; font-weight: bold; }
+        .test-result { padding: 10px 15px; border-bottom: 1px solid #eee; }
+        .test-result:last-child { border-bottom: none; }
+        .status-passed { color: green; }
+        .status-failed { color: red; }
+        .status-error { color: orange; }
+        .status-skipped { color: gray; }
+        .error-details { background: #fff5f5; border: 1px solid #fed7d7; border-radius: 4px; padding: 10px; margin-top: 5px; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 爬虫项目测试报告</h1>
+            <p>生成时间: 2025-08-31 16:00:40</p>
+        </div>
+        
+        <div class="summary">
+            <div class="summary-card">
+                <h3>总测试数</h3>
+                <div class="value">54</div>
+            </div>
+            <div class="summary-card">
+                <h3>通过</h3>
+                <div class="value" style="color: green;">43</div>
+            </div>
+            <div class="summary-card">
+                <h3>失败</h3>
+                <div class="value" style="color: red;">4</div>
+            </div>
+            <div class="summary-card">
+                <h3>错误</h3>
+                <div class="value" style="color: orange;">7</div>
+            </div>
+            <div class="summary-card">
+                <h3>成功率</h3>
+                <div class="value" style="color: orange;">79.6%</div>
+            </div>
+            <div class="summary-card">
+                <h3>总耗时</h3>
+                <div class="value">18.31s</div>
+            </div>
+        </div>
+        
+        <div class="suite-results">
+            <h2>测试套件详情</h2>
+
+            <div class="suite">
+                <div class="suite-header">
+                    📦 Spider Core Tests 
+                    <span style="color: green;">
+                        (10/10 通过, 100.0%)
+                    </span>
+                    <span style="float: right;">⏱️ 0.250s</span>
+                </div>
+
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpiderConfig.test_spider_config_creation</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 7 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpiderConfig.test_spider_config_defaults</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 5 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpider.test_get_urls_default</span>
+                    <span style="float: right;">⏱️ 0.031s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpider.test_parse_response_default</span>
+                    <span style="float: right;">⏱️ 0.021s | 🔍 4 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpider.test_save_results</span>
+                    <span style="float: right;">⏱️ 0.021s | 🔍 6 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpider.test_spider_config_loading</span>
+                    <span style="float: right;">⏱️ 0.019s | 🔍 5 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpider.test_spider_config_not_found</span>
+                    <span style="float: right;">⏱️ 0.019s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpider.test_spider_initialization</span>
+                    <span style="float: right;">⏱️ 0.019s | 🔍 5 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpider.test_spider_invalid_target</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpiderIntegration.test_spider_full_workflow</span>
+                    <span style="float: right;">⏱️ 0.119s | 🔍 4 assertions</span>
+</div></div>
+            <div class="suite">
+                <div class="suite-header">
+                    📦 Utils Module Tests 
+                    <span style="color: orange;">
+                        (12/16 通过, 75.0%)
+                    </span>
+                    <span style="float: right;">⏱️ 17.171s</span>
+                </div>
+
+                <div class="test-result">
+                    <span class="status-failed">❌ TestDataProcessor.test_clean_text</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> 断言失败: 期望 Hello World，实际 Hello World 
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestDataProcessor.test_extract_by_rules</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestDataProcessor.test_extract_images</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestDataProcessor.test_extract_links</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestDataProcessor.test_extract_text</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestDataProcessor.test_parse_html</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestDataProcessor.test_parse_html_invalid</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestStorage.test_load_json</span>
+                    <span style="float: right;">⏱️ 0.002s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestStorage.test_load_json_nonexistent</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestStorage.test_save_csv</span>
+                    <span style="float: right;">⏱️ 0.003s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestStorage.test_save_empty_data</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestStorage.test_save_excel</span>
+                    <span style="float: right;">⏱️ 0.058s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestStorage.test_save_json</span>
+                    <span style="float: right;">⏱️ 0.002s | 🔍 3 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-failed">❌ TestRequestHandler.test_fetch_max_retries_exceeded</span>
+                    <span style="float: right;">⏱️ 3.028s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> 断言失败: 应该尝试2次请求
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-failed">❌ TestRequestHandler.test_fetch_retry_on_server_error</span>
+                    <span style="float: right;">⏱️ 7.038s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> 断言失败: 期望不为None，实际为None
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-failed">❌ TestRequestHandler.test_fetch_success</span>
+                    <span style="float: right;">⏱️ 7.033s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> 断言失败: 期望不为None，实际为None
+                    </div>
+</div></div>
+            <div class="suite">
+                <div class="suite-header">
+                    📦 Mobile Module Tests 
+                    <span style="color: orange;">
+                        (13/20 通过, 65.0%)
+                    </span>
+                    <span style="float: right;">⏱️ 0.411s</span>
+                </div>
+
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAndroidEmulator.test_connect_device</span>
+                    <span style="float: right;">⏱️ 0.100s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAndroidEmulator.test_get_device_info</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 4 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAndroidEmulator.test_install_app</span>
+                    <span style="float: right;">⏱️ 0.100s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAndroidEmulator.test_start_emulator</span>
+                    <span style="float: right;">⏱️ 0.100s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAndroidEmulator.test_stop_emulator</span>
+                    <span style="float: right;">⏱️ 0.100s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAndroidEmulator.test_take_screenshot</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAppiumHandler.test_click_element</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAppiumHandler.test_find_element</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAppiumHandler.test_get_text</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAppiumHandler.test_input_text</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAppiumHandler.test_scroll_down</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestAppiumHandler.test_take_screenshot</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-error">⚠️ TestMobileSpider.test_mobile_config_loading</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> SpiderConfig.__init__() got an unexpected keyword argument 'avd_name'
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestMobileSpider.test_mobile_spider_config_creation</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 5 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-error">⚠️ TestMobileSpider.test_mobile_spider_initialization</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> SpiderConfig.__init__() got an unexpected keyword argument 'avd_name'
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-error">⚠️ TestMobileSpider.test_setup_mobile_environment</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> SpiderConfig.__init__() got an unexpected keyword argument 'avd_name'
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-error">⚠️ TestMobileSpiderIntegration.test_extract_list_data</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> SpiderConfig.__init__() got an unexpected keyword argument 'avd_name'
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-error">⚠️ TestMobileSpiderIntegration.test_mobile_spider_full_workflow</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> SpiderConfig.__init__() got an unexpected keyword argument 'avd_name'
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-error">⚠️ TestMobileSpiderIntegration.test_navigate_to_url</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> SpiderConfig.__init__() got an unexpected keyword argument 'avd_name'
+                    </div>
+</div>
+                <div class="test-result">
+                    <span class="status-error">⚠️ TestMobileSpiderIntegration.test_scroll_and_collect</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 0 assertions</span>
+
+                    <div class="error-details">
+                        <strong>错误信息:</strong> SpiderConfig.__init__() got an unexpected keyword argument 'avd_name'
+                    </div>
+</div></div>
+            <div class="suite">
+                <div class="suite-header">
+                    📦 Integration Tests 
+                    <span style="color: green;">
+                        (8/8 通过, 100.0%)
+                    </span>
+                    <span style="float: right;">⏱️ 0.475s</span>
+                </div>
+
+                <div class="test-result">
+                    <span class="status-passed">✅ TestSpiderIntegration.test_end_to_end_spider_workflow</span>
+                    <span style="float: right;">⏱️ 0.224s | 🔍 16 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestExampleSpiderIntegration.test_example_spider_workflow</span>
+                    <span style="float: right;">⏱️ 0.122s | 🔍 8 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestErrorHandling.test_network_error_handling</span>
+                    <span style="float: right;">⏱️ 0.047s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestErrorHandling.test_parse_response_error</span>
+                    <span style="float: right;">⏱️ 0.018s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestConfigurationEdgeCases.test_empty_config_file</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestConfigurationEdgeCases.test_malformed_config_file</span>
+                    <span style="float: right;">⏱️ 0.000s | 🔍 1 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestPerformance.test_concurrent_processing</span>
+                    <span style="float: right;">⏱️ 0.061s | 🔍 2 assertions</span>
+</div>
+                <div class="test-result">
+                    <span class="status-passed">✅ TestDataFlow.test_data_pipeline</span>
+                    <span style="float: right;">⏱️ 0.001s | 🔍 7 assertions</span>
+</div></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -12,10 +12,12 @@ import os
 from pathlib import Path
 from unittest.mock import Mock, AsyncMock, patch
 
-from test_framework import TestCase, create_test_suite
-from mocks import MockLogger, MockAndroidEmulator, MockAppiumDriver, TestDataGenerator
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from tests.test_framework import TestCase, create_test_suite
+from tests.mocks import MockLogger, MockAndroidEmulator, MockAppiumDriver, TestDataGenerator
 from utils.android_emulator import AndroidEmulator
 from utils.appium_handler import AppiumHandler
 from mobile_spider import MobileSpider, MobileSpiderConfig

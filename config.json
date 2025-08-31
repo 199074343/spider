@@ -71,5 +71,17 @@
     "new_command_timeout": 300,
     "implicit_wait": 10,
     "page_load_timeout": 30
+  },
+  "test_real": {
+    "target": "test_real",
+    "base_url": "https://httpbin.org",
+    "headers": {
+      "User-Agent": "Spider Test Bot 1.0"
+    },
+    "delay": 1.0,
+    "timeout": 30,
+    "max_retries": 3,
+    "output_format": "json",
+    "output_path": "test_output"
   }
 }

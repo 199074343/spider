@@ -1,0 +1,899 @@
+{
+  "summary": {
+    "total_source_files": 15,
+    "total_test_files": 6,
+    "total_classes": 16,
+    "total_functions": 18,
+    "total_methods": 21,
+    "total_tests": 33,
+    "total_lines_of_code": 1961,
+    "estimated_file_coverage": 53.333333333333336,
+    "test_to_code_ratio": 0.6
+  },
+  "source_files": {
+    "verify_tests.py": {
+      "file": "verify_tests.py",
+      "classes": [
+        {
+          "name": "SimpleTest",
+          "line": 90,
+          "methods": [
+            {
+              "name": "test_basic",
+              "line": 91,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "check_test_files",
+          "line": 15,
+          "is_async": false
+        },
+        {
+          "name": "check_imports",
+          "line": 52,
+          "is_async": false
+        },
+        {
+          "name": "check_test_framework",
+          "line": 82,
+          "is_async": false
+        },
+        {
+          "name": "check_mock_objects",
+          "line": 111,
+          "is_async": false
+        },
+        {
+          "name": "check_dependencies",
+          "line": 141,
+          "is_async": false
+        },
+        {
+          "name": "main",
+          "line": 181,
+          "is_async": false
+        }
+      ],
+      "methods": [],
+      "lines_of_code": 172
+    },
+    "example_spider.py": {
+      "file": "example_spider.py",
+      "classes": [
+        {
+          "name": "ExampleSpider",
+          "line": 13,
+          "methods": []
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 48
+    },
+    "example_mobile_spider.py": {
+      "file": "example_mobile_spider.py",
+      "classes": [
+        {
+          "name": "MobileAppSpider",
+          "line": 17,
+          "methods": []
+        },
+        {
+          "name": "MobileBrowserSpider",
+          "line": 181,
+          "methods": []
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 258
+    },
+    "mobile_tools.py": {
+      "file": "mobile_tools.py",
+      "classes": [
+        {
+          "name": "MobileToolsManager",
+          "line": 21,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 24,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "line": 219,
+          "is_async": false
+        }
+      ],
+      "methods": [],
+      "lines_of_code": 213
+    },
+    "mobile_spider.py": {
+      "file": "mobile_spider.py",
+      "classes": [
+        {
+          "name": "MobileSpiderConfig",
+          "line": 24,
+          "methods": []
+        },
+        {
+          "name": "MobileSpider",
+          "line": 50,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 53,
+              "is_async": false
+            },
+            {
+              "name": "_load_mobile_config",
+              "line": 60,
+              "is_async": false
+            }
+          ]
+        },
+        {
+          "name": "MobileSpiderFactory",
+          "line": 306,
+          "methods": [
+            {
+              "name": "create_app_spider",
+              "line": 310,
+              "is_async": false
+            },
+            {
+              "name": "create_browser_spider",
+              "line": 319,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 229
+    },
+    "setup_mobile.py": {
+      "file": "setup_mobile.py",
+      "classes": [],
+      "functions": [
+        {
+          "name": "run_command",
+          "line": 14,
+          "is_async": false
+        },
+        {
+          "name": "check_prerequisites",
+          "line": 37,
+          "is_async": false
+        },
+        {
+          "name": "install_python_dependencies",
+          "line": 56,
+          "is_async": false
+        },
+        {
+          "name": "install_appium",
+          "line": 64,
+          "is_async": false
+        },
+        {
+          "name": "setup_android_sdk",
+          "line": 79,
+          "is_async": false
+        },
+        {
+          "name": "create_directories",
+          "line": 112,
+          "is_async": false
+        },
+        {
+          "name": "main",
+          "line": 121,
+          "is_async": false
+        }
+      ],
+      "methods": [],
+      "lines_of_code": 124
+    },
+    "spider.py": {
+      "file": "spider.py",
+      "classes": [
+        {
+          "name": "SpiderConfig",
+          "line": 19,
+          "methods": []
+        },
+        {
+          "name": "Spider",
+          "line": 30,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 33,
+              "is_async": false
+            },
+            {
+              "name": "_load_config",
+              "line": 45,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 123
+    },
+    "main.py": {
+      "file": "main.py",
+      "classes": [],
+      "functions": [
+        {
+          "name": "main",
+          "line": 14,
+          "is_async": false
+        }
+      ],
+      "methods": [],
+      "lines_of_code": 41
+    },
+    "quick_test.py": {
+      "file": "quick_test.py",
+      "classes": [
+        {
+          "name": "QuickTestCase",
+          "line": 20,
+          "methods": [
+            {
+              "name": "test_basic_assertions",
+              "line": 23,
+              "is_async": false
+            },
+            {
+              "name": "test_exception_assertion",
+              "line": 34,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "line": 94,
+          "is_async": false
+        },
+        {
+          "name": "raise_value_error",
+          "line": 36,
+          "is_async": false
+        }
+      ],
+      "methods": [],
+      "lines_of_code": 85
+    },
+    "utils/android_emulator.py": {
+      "file": "utils/android_emulator.py",
+      "classes": [
+        {
+          "name": "AndroidEmulator",
+          "line": 18,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 21,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 210
+    },
+    "utils/storage.py": {
+      "file": "utils/storage.py",
+      "classes": [
+        {
+          "name": "Storage",
+          "line": 15,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 18,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 73
+    },
+    "utils/request_handler.py": {
+      "file": "utils/request_handler.py",
+      "classes": [
+        {
+          "name": "RequestHandler",
+          "line": 13,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 16,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 55
+    },
+    "utils/data_processor.py": {
+      "file": "utils/data_processor.py",
+      "classes": [
+        {
+          "name": "DataProcessor",
+          "line": 12,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 15,
+              "is_async": false
+            },
+            {
+              "name": "parse_html",
+              "line": 18,
+              "is_async": false
+            },
+            {
+              "name": "extract_text",
+              "line": 27,
+              "is_async": false
+            },
+            {
+              "name": "extract_links",
+              "line": 40,
+              "is_async": false
+            },
+            {
+              "name": "extract_images",
+              "line": 55,
+              "is_async": false
+            },
+            {
+              "name": "clean_text",
+              "line": 70,
+              "is_async": false
+            },
+            {
+              "name": "extract_by_rules",
+              "line": 84,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 81
+    },
+    "utils/appium_handler.py": {
+      "file": "utils/appium_handler.py",
+      "classes": [
+        {
+          "name": "AppiumHandler",
+          "line": 20,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 23,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "methods": [],
+      "lines_of_code": 220
+    },
+    "utils/logger.py": {
+      "file": "utils/logger.py",
+      "classes": [],
+      "functions": [
+        {
+          "name": "setup_logger",
+          "line": 13,
+          "is_async": false
+        }
+      ],
+      "methods": [],
+      "lines_of_code": 29
+    }
+  },
+  "test_files": {
+    "tests/test_integration.py": {
+      "file": "tests/test_integration.py",
+      "test_classes": [
+        {
+          "name": "TestSpiderIntegration",
+          "line": 25,
+          "test_methods": []
+        },
+        {
+          "name": "TestExampleSpiderIntegration",
+          "line": 153,
+          "test_methods": []
+        },
+        {
+          "name": "TestErrorHandling",
+          "line": 239,
+          "test_methods": []
+        },
+        {
+          "name": "TestConfigurationEdgeCases",
+          "line": 312,
+          "test_methods": [
+            {
+              "name": "test_empty_config_file",
+              "line": 319,
+              "is_async": false
+            },
+            {
+              "name": "test_malformed_config_file",
+              "line": 340,
+              "is_async": false
+            }
+          ]
+        },
+        {
+          "name": "TestPerformance",
+          "line": 363,
+          "test_methods": []
+        },
+        {
+          "name": "TestDataFlow",
+          "line": 457,
+          "test_methods": []
+        },
+        {
+          "name": "IntegrationTestSpider",
+          "line": 60,
+          "test_methods": []
+        },
+        {
+          "name": "PerfTestSpider",
+          "line": 397,
+          "test_methods": []
+        }
+      ],
+      "test_functions": [
+        {
+          "name": "test_empty_config_file",
+          "line": 319,
+          "is_async": false
+        },
+        {
+          "name": "test_malformed_config_file",
+          "line": 340,
+          "is_async": false
+        }
+      ],
+      "total_tests": 4
+    },
+    "tests/test_framework.py": {
+      "file": "tests/test_framework.py",
+      "test_classes": [
+        {
+          "name": "TestStatus",
+          "line": 18,
+          "test_methods": []
+        },
+        {
+          "name": "TestResult",
+          "line": 29,
+          "test_methods": []
+        },
+        {
+          "name": "TestCase",
+          "line": 46,
+          "test_methods": []
+        },
+        {
+          "name": "TestSuite",
+          "line": 132,
+          "test_methods": []
+        },
+        {
+          "name": "TestRunner",
+          "line": 274,
+          "test_methods": []
+        },
+        {
+          "name": "TestUtils",
+          "line": 434,
+          "test_methods": []
+        }
+      ],
+      "test_functions": [
+        {
+          "name": "test_method",
+          "line": 366,
+          "is_async": false
+        }
+      ],
+      "total_tests": 1
+    },
+    "tests/test_spider.py": {
+      "file": "tests/test_spider.py",
+      "test_classes": [
+        {
+          "name": "TestSpiderConfig",
+          "line": 23,
+          "test_methods": [
+            {
+              "name": "test_spider_config_creation",
+              "line": 26,
+              "is_async": false
+            },
+            {
+              "name": "test_spider_config_defaults",
+              "line": 47,
+              "is_async": false
+            }
+          ]
+        },
+        {
+          "name": "TestSpider",
+          "line": 62,
+          "test_methods": [
+            {
+              "name": "test_spider_initialization",
+              "line": 96,
+              "is_async": false
+            },
+            {
+              "name": "test_spider_config_loading",
+              "line": 111,
+              "is_async": false
+            },
+            {
+              "name": "test_spider_config_not_found",
+              "line": 126,
+              "is_async": false
+            },
+            {
+              "name": "test_spider_invalid_target",
+              "line": 142,
+              "is_async": false
+            }
+          ]
+        },
+        {
+          "name": "TestSpiderIntegration",
+          "line": 220,
+          "test_methods": []
+        },
+        {
+          "name": "TestSpiderImpl",
+          "line": 255,
+          "test_methods": []
+        }
+      ],
+      "test_functions": [
+        {
+          "name": "test_spider_config_creation",
+          "line": 26,
+          "is_async": false
+        },
+        {
+          "name": "test_spider_config_defaults",
+          "line": 47,
+          "is_async": false
+        },
+        {
+          "name": "test_spider_initialization",
+          "line": 96,
+          "is_async": false
+        },
+        {
+          "name": "test_spider_config_loading",
+          "line": 111,
+          "is_async": false
+        },
+        {
+          "name": "test_spider_config_not_found",
+          "line": 126,
+          "is_async": false
+        },
+        {
+          "name": "test_spider_invalid_target",
+          "line": 142,
+          "is_async": false
+        }
+      ],
+      "total_tests": 12
+    },
+    "tests/test_config_manager.py": {
+      "file": "tests/test_config_manager.py",
+      "test_classes": [
+        {
+          "name": "TestConfigManager",
+          "line": 14,
+          "test_methods": []
+        }
+      ],
+      "test_functions": [],
+      "total_tests": 0
+    },
+    "tests/test_utils.py": {
+      "file": "tests/test_utils.py",
+      "test_classes": [
+        {
+          "name": "TestDataProcessor",
+          "line": 25,
+          "test_methods": [
+            {
+              "name": "test_parse_html",
+              "line": 36,
+              "is_async": false
+            },
+            {
+              "name": "test_parse_html_invalid",
+              "line": 46,
+              "is_async": false
+            },
+            {
+              "name": "test_extract_text",
+              "line": 52,
+              "is_async": false
+            },
+            {
+              "name": "test_extract_links",
+              "line": 68,
+              "is_async": false
+            },
+            {
+              "name": "test_extract_images",
+              "line": 77,
+              "is_async": false
+            },
+            {
+              "name": "test_clean_text",
+              "line": 86,
+              "is_async": false
+            },
+            {
+              "name": "test_extract_by_rules",
+              "line": 101,
+              "is_async": false
+            }
+          ]
+        },
+        {
+          "name": "TestStorage",
+          "line": 119,
+          "test_methods": []
+        },
+        {
+          "name": "TestRequestHandler",
+          "line": 235,
+          "test_methods": []
+        }
+      ],
+      "test_functions": [
+        {
+          "name": "test_parse_html",
+          "line": 36,
+          "is_async": false
+        },
+        {
+          "name": "test_parse_html_invalid",
+          "line": 46,
+          "is_async": false
+        },
+        {
+          "name": "test_extract_text",
+          "line": 52,
+          "is_async": false
+        },
+        {
+          "name": "test_extract_links",
+          "line": 68,
+          "is_async": false
+        },
+        {
+          "name": "test_extract_images",
+          "line": 77,
+          "is_async": false
+        },
+        {
+          "name": "test_clean_text",
+          "line": 86,
+          "is_async": false
+        },
+        {
+          "name": "test_extract_by_rules",
+          "line": 101,
+          "is_async": false
+        }
+      ],
+      "total_tests": 14
+    },
+    "tests/test_mobile.py": {
+      "file": "tests/test_mobile.py",
+      "test_classes": [
+        {
+          "name": "TestAndroidEmulator",
+          "line": 26,
+          "test_methods": []
+        },
+        {
+          "name": "TestAppiumHandler",
+          "line": 83,
+          "test_methods": []
+        },
+        {
+          "name": "TestMobileSpider",
+          "line": 157,
+          "test_methods": [
+            {
+              "name": "test_mobile_spider_config_creation",
+              "line": 200,
+              "is_async": false
+            }
+          ]
+        },
+        {
+          "name": "TestMobileSpiderIntegration",
+          "line": 271,
+          "test_methods": []
+        },
+        {
+          "name": "TestMobileSpiderImpl",
+          "line": 313,
+          "test_methods": []
+        }
+      ],
+      "test_functions": [
+        {
+          "name": "test_mobile_spider_config_creation",
+          "line": 200,
+          "is_async": false
+        }
+      ],
+      "total_tests": 2
+    }
+  },
+  "tested_components": {
+    "tests/test_integration.py": [
+      "os",
+      "tests.mocks.MockStorage",
+      "tests.test_framework.create_test_suite",
+      "tests.mocks.TestDataGenerator",
+      "asyncio",
+      "utils.storage.Storage",
+      "unittest.mock.Mock",
+      "shutil",
+      "unittest.mock.AsyncMock",
+      "tests.test_framework.TestCase",
+      "tests.mocks.MockLogger",
+      "example_spider.ExampleSpider",
+      "time",
+      "tests.mocks.MockHttpSession",
+      "spider.Spider",
+      "unittest.mock.patch",
+      "tempfile",
+      "tests.mocks.MockHttpResponse",
+      "utils.data_processor.DataProcessor",
+      "pathlib.Path",
+      "json",
+      "sys"
+    ],
+    "tests/test_framework.py": [
+      "inspect",
+      "functools",
+      "time",
+      "typing.Dict",
+      "os",
+      "dataclasses.dataclass",
+      "typing.Any",
+      "json",
+      "traceback",
+      "asyncio",
+      "enum.Enum",
+      "tempfile",
+      "typing.List",
+      "typing.Callable",
+      "typing.Optional"
+    ],
+    "tests/test_spider.py": [
+      "shutil",
+      "os",
+      "tests.test_framework.TestCase",
+      "pathlib.Path",
+      "json",
+      "sys",
+      "tests.mocks.MockLogger",
+      "tests.test_framework.create_test_suite",
+      "tests.mocks.MockHttpSession",
+      "tests.mocks.TestDataGenerator",
+      "tests.mocks.MockStorage",
+      "spider.Spider",
+      "asyncio",
+      "spider.SpiderConfig",
+      "tempfile",
+      "tests.mocks.MockHttpResponse"
+    ],
+    "tests/test_config_manager.py": [
+      "shutil",
+      "typing.Dict",
+      "os",
+      "pathlib.Path",
+      "typing.Any",
+      "json",
+      "typing.Optional"
+    ],
+    "tests/test_utils.py": [
+      "utils.data_processor.DataProcessor",
+      "shutil",
+      "os",
+      "tests.test_framework.TestCase",
+      "pathlib.Path",
+      "utils.storage.Storage",
+      "json",
+      "sys",
+      "tests.mocks.MockLogger",
+      "tests.test_framework.create_test_suite",
+      "tests.mocks.MockHttpSession",
+      "tests.mocks.TestDataGenerator",
+      "utils.request_handler.RequestHandler",
+      "asyncio",
+      "pandas",
+      "tempfile",
+      "tests.mocks.MockHttpResponse"
+    ],
+    "tests/test_mobile.py": [
+      "os",
+      "utils.android_emulator.AndroidEmulator",
+      "utils.appium_handler.AppiumHandler",
+      "tests.test_framework.create_test_suite",
+      "mocks.MockStorage",
+      "tests.mocks.TestDataGenerator",
+      "asyncio",
+      "unittest.mock.Mock",
+      "shutil",
+      "unittest.mock.AsyncMock",
+      "tests.test_framework.TestCase",
+      "tests.mocks.MockLogger",
+      "tests.mocks.MockAppiumDriver",
+      "mobile_spider.MobileSpiderConfig",
+      "tests.mocks.MockAndroidEmulator",
+      "mobile_spider.MobileSpider",
+      "unittest.mock.patch",
+      "tempfile",
+      "pathlib.Path",
+      "json",
+      "sys"
+    ]
+  },
+  "uncovered_files": [
+    "verify_tests.py",
+    "example_mobile_spider.py",
+    "mobile_tools.py",
+    "setup_mobile.py",
+    "main.py",
+    "quick_test.py",
+    "utils/logger.py"
+  ]
+}

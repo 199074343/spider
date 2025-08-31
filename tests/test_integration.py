@@ -12,10 +12,12 @@ import os
 from pathlib import Path
 from unittest.mock import Mock, AsyncMock, patch
 
-from test_framework import TestCase, create_test_suite
-from mocks import MockLogger, MockHttpSession, MockHttpResponse, TestDataGenerator, MockStorage
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from tests.test_framework import TestCase, create_test_suite
+from tests.mocks import MockLogger, MockHttpSession, MockHttpResponse, TestDataGenerator, MockStorage
 from spider import Spider
 from example_spider import ExampleSpider
 

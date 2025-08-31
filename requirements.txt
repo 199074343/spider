@@ -16,7 +16,5 @@ httpx>=0.24.0
 Appium-Python-Client>=3.0.0
 adb-shell>=0.4.0
 uiautomator2>=2.16.0
-pure-python-adb>=0.3.0
 # 图像处理（用于截图分析）
 Pillow>=9.0.0
-opencv-python>=4.6.0

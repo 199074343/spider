@@ -12,7 +12,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
-from typing import Dict
+from typing import Dict, List
 
 from utils.logger import setup_logger
 from utils.android_emulator import AndroidEmulator

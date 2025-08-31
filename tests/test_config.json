@@ -1,0 +1,33 @@
+{
+  "test_settings": {
+    "timeout": 30,
+    "max_retries": 3,
+    "log_level": "DEBUG",
+    "temp_dir": "temp_test_data",
+    "mock_delay": 0.01,
+    "cleanup_after_test": true
+  },
+  "test_data": {
+    "sample_urls": [
+      "https://test1.example.com",
+      "https://test2.example.com", 
+      "https://test3.example.com"
+    ],
+    "sample_html": {
+      "title": "Test Page Title",
+      "content": "This is test content for unit testing",
+      "links": ["/link1", "/link2", "/link3"],
+      "images": ["/image1.jpg", "/image2.png"]
+    }
+  },
+  "mobile_test_config": {
+    "mock_device_info": {
+      "model": "Test Device",
+      "android_version": "11.0",
+      "manufacturer": "Test Manufacturer",
+      "sdk_version": "30"
+    },
+    "mock_app_package": "com.test.mockapp",
+    "mock_app_activity": "com.test.mockapp.MainActivity"
+  }
+}

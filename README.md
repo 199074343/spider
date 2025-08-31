@@ -133,3 +133,39 @@ python test_mobile_integration.py         # 完整集成测试
 ```
 
 详细的移动端使用说明请参考 [MOBILE_README.md](MOBILE_README.md)
+
+## 🧪 测试功能 (新增)
+
+项目包含完整的自定义单元测试框架:
+
+### 快速测试
+```bash
+python verify_tests.py        # 验证测试系统
+python quick_test.py          # 快速功能验证
+python test_all.py            # 完整测试套件
+```
+
+### 分类测试
+```bash
+python run_tests.py --suite spider        # 核心爬虫测试
+python run_tests.py --suite utils         # 工具模块测试
+python run_tests.py --suite mobile        # 移动端测试
+python run_tests.py --suite integration   # 集成测试
+```
+
+### 自动化测试
+```bash
+python test_automation.py ci              # CI管道测试
+python test_automation.py smoke           # 冒烟测试
+python test_automation.py coverage        # 覆盖率分析
+```
+
+### 测试特性
+- **自定义测试框架** - 支持异步测试和丰富断言
+- **Mock对象库** - 完整的HTTP、移动端、日志Mock
+- **多格式报告** - HTML、JSON、JUnit XML格式
+- **覆盖率分析** - 代码覆盖率统计和分析
+- **CI/CD集成** - GitHub Actions自动化测试
+- **性能测试** - 并发性能验证
+
+详细的测试使用说明请参考 [TESTING_GUIDE.md](TESTING_GUIDE.md)

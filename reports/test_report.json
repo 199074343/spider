@@ -1,0 +1,600 @@
+{
+  "total_suites": 4,
+  "total_tests": 54,
+  "total_passed": 54,
+  "total_failed": 0,
+  "total_errors": 0,
+  "total_skipped": 0,
+  "overall_success_rate": 100.0,
+  "total_duration": 2.745253324508667,
+  "suite_results": [
+    {
+      "suite_name": "Spider Core Tests",
+      "total_tests": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "success_rate": 100.0,
+      "total_duration": 0.244248628616333,
+      "results": [
+        {
+          "name": "TestSpiderConfig.test_spider_config_creation",
+          "status": "passed",
+          "duration": 2.3603439331054688e-05,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 7,
+          "setup_duration": 7.152557373046875e-07,
+          "teardown_duration": 2.384185791015625e-07
+        },
+        {
+          "name": "TestSpiderConfig.test_spider_config_defaults",
+          "status": "passed",
+          "duration": 9.298324584960938e-06,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 5,
+          "setup_duration": 2.384185791015625e-07,
+          "teardown_duration": 2.384185791015625e-07
+        },
+        {
+          "name": "TestSpider.test_get_urls_default",
+          "status": "passed",
+          "duration": 0.02636098861694336,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 0.0002892017364501953,
+          "teardown_duration": 8.726119995117188e-05
+        },
+        {
+          "name": "TestSpider.test_parse_response_default",
+          "status": "passed",
+          "duration": 0.020267963409423828,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 4,
+          "setup_duration": 0.0001995563507080078,
+          "teardown_duration": 7.605552673339844e-05
+        },
+        {
+          "name": "TestSpider.test_save_results",
+          "status": "passed",
+          "duration": 0.019859790802001953,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 6,
+          "setup_duration": 0.00012230873107910156,
+          "teardown_duration": 0.00018167495727539062
+        },
+        {
+          "name": "TestSpider.test_spider_config_loading",
+          "status": "passed",
+          "duration": 0.019347190856933594,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 5,
+          "setup_duration": 0.0001232624053955078,
+          "teardown_duration": 8.749961853027344e-05
+        },
+        {
+          "name": "TestSpider.test_spider_config_not_found",
+          "status": "passed",
+          "duration": 0.019136667251586914,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 0.00012135505676269531,
+          "teardown_duration": 7.891654968261719e-05
+        },
+        {
+          "name": "TestSpider.test_spider_initialization",
+          "status": "passed",
+          "duration": 0.018923521041870117,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 5,
+          "setup_duration": 0.00012087821960449219,
+          "teardown_duration": 7.414817810058594e-05
+        },
+        {
+          "name": "TestSpider.test_spider_invalid_target",
+          "status": "passed",
+          "duration": 0.00020647048950195312,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 0.00012087821960449219,
+          "teardown_duration": 3.3855438232421875e-05
+        },
+        {
+          "name": "TestSpiderIntegration.test_spider_full_workflow",
+          "status": "passed",
+          "duration": 0.11914587020874023,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 4,
+          "setup_duration": 9.059906005859375e-05,
+          "teardown_duration": 0.00011229515075683594
+        }
+      ]
+    },
+    {
+      "suite_name": "Utils Module Tests",
+      "total_tests": 16,
+      "passed": 16,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "success_rate": 100.0,
+      "total_duration": 0.13133764266967773,
+      "results": [
+        {
+          "name": "TestDataProcessor.test_clean_text",
+          "status": "passed",
+          "duration": 0.0008299350738525391,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 4.76837158203125e-06,
+          "teardown_duration": 4.76837158203125e-07
+        },
+        {
+          "name": "TestDataProcessor.test_extract_by_rules",
+          "status": "passed",
+          "duration": 0.0009632110595703125,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 4.0531158447265625e-06,
+          "teardown_duration": 7.152557373046875e-07
+        },
+        {
+          "name": "TestDataProcessor.test_extract_images",
+          "status": "passed",
+          "duration": 0.00043082237243652344,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 2.86102294921875e-06,
+          "teardown_duration": 4.76837158203125e-07
+        },
+        {
+          "name": "TestDataProcessor.test_extract_links",
+          "status": "passed",
+          "duration": 0.0003352165222167969,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 2.6226043701171875e-06,
+          "teardown_duration": 2.384185791015625e-07
+        },
+        {
+          "name": "TestDataProcessor.test_extract_text",
+          "status": "passed",
+          "duration": 0.000431060791015625,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 2.384185791015625e-06,
+          "teardown_duration": 7.152557373046875e-07
+        },
+        {
+          "name": "TestDataProcessor.test_parse_html",
+          "status": "passed",
+          "duration": 0.0003018379211425781,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 2.1457672119140625e-06,
+          "teardown_duration": 4.76837158203125e-07
+        },
+        {
+          "name": "TestDataProcessor.test_parse_html_invalid",
+          "status": "passed",
+          "duration": 8.7738037109375e-05,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 2.384185791015625e-06,
+          "teardown_duration": 2.384185791015625e-07
+        },
+        {
+          "name": "TestStorage.test_load_json",
+          "status": "passed",
+          "duration": 0.0016944408416748047,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 8.58306884765625e-06,
+          "teardown_duration": 0.00011229515075683594
+        },
+        {
+          "name": "TestStorage.test_load_json_nonexistent",
+          "status": "passed",
+          "duration": 0.0001285076141357422,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 8.821487426757812e-06,
+          "teardown_duration": 2.002716064453125e-05
+        },
+        {
+          "name": "TestStorage.test_save_csv",
+          "status": "passed",
+          "duration": 0.002515554428100586,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 4.0531158447265625e-06,
+          "teardown_duration": 0.00010776519775390625
+        },
+        {
+          "name": "TestStorage.test_save_empty_data",
+          "status": "passed",
+          "duration": 0.0007498264312744141,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 6.9141387939453125e-06,
+          "teardown_duration": 0.00015497207641601562
+        },
+        {
+          "name": "TestStorage.test_save_excel",
+          "status": "passed",
+          "duration": 0.05658602714538574,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 9.059906005859375e-06,
+          "teardown_duration": 0.0001404285430908203
+        },
+        {
+          "name": "TestStorage.test_save_json",
+          "status": "passed",
+          "duration": 0.0016436576843261719,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 1.049041748046875e-05,
+          "teardown_duration": 9.441375732421875e-05
+        },
+        {
+          "name": "TestRequestHandler.test_fetch_max_retries_exceeded",
+          "status": "passed",
+          "duration": 0.020235300064086914,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 0.020190954208374023,
+          "teardown_duration": 4.76837158203125e-07
+        },
+        {
+          "name": "TestRequestHandler.test_fetch_retry_on_server_error",
+          "status": "passed",
+          "duration": 0.022810697555541992,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 4,
+          "setup_duration": 0.022762775421142578,
+          "teardown_duration": 4.76837158203125e-07
+        },
+        {
+          "name": "TestRequestHandler.test_fetch_success",
+          "status": "passed",
+          "duration": 0.02001476287841797,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 3,
+          "setup_duration": 0.019968509674072266,
+          "teardown_duration": 4.76837158203125e-07
+        }
+      ]
+    },
+    {
+      "suite_name": "Mobile Module Tests",
+      "total_tests": 20,
+      "passed": 20,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "success_rate": 100.0,
+      "total_duration": 1.910574197769165,
+      "results": [
+        {
+          "name": "TestAndroidEmulator.test_connect_device",
+          "status": "passed",
+          "duration": 0.10020709037780762,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 5.245208740234375e-06,
+          "teardown_duration": 9.5367431640625e-07
+        },
+        {
+          "name": "TestAndroidEmulator.test_get_device_info",
+          "status": "passed",
+          "duration": 2.0742416381835938e-05,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 4,
+          "setup_duration": 5.7220458984375e-06,
+          "teardown_duration": 2.384185791015625e-07
+        },
+        {
+          "name": "TestAndroidEmulator.test_install_app",
+          "status": "passed",
+          "duration": 0.10017848014831543,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 1.430511474609375e-06,
+          "teardown_duration": 1.1920928955078125e-06
+        },
+        {
+          "name": "TestAndroidEmulator.test_start_emulator",
+          "status": "passed",
+          "duration": 0.10027313232421875,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 4.0531158447265625e-06,
+          "teardown_duration": 1.1920928955078125e-06
+        },
+        {
+          "name": "TestAndroidEmulator.test_stop_emulator",
+          "status": "passed",
+          "duration": 0.1002190113067627,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 4.291534423828125e-06,
+          "teardown_duration": 1.6689300537109375e-06
+        },
+        {
+          "name": "TestAndroidEmulator.test_take_screenshot",
+          "status": "passed",
+          "duration": 0.00017452239990234375,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 4.0531158447265625e-06,
+          "teardown_duration": 7.152557373046875e-07
+        },
+        {
+          "name": "TestAppiumHandler.test_click_element",
+          "status": "passed",
+          "duration": 0.0006515979766845703,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 7.3909759521484375e-06,
+          "teardown_duration": 4.76837158203125e-07
+        },
+        {
+          "name": "TestAppiumHandler.test_find_element",
+          "status": "passed",
+          "duration": 0.0009400844573974609,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 3.814697265625e-06,
+          "teardown_duration": 1.1920928955078125e-06
+        },
+        {
+          "name": "TestAppiumHandler.test_get_text",
+          "status": "passed",
+          "duration": 0.0006108283996582031,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 4.5299530029296875e-06,
+          "teardown_duration": 9.5367431640625e-07
+        },
+        {
+          "name": "TestAppiumHandler.test_input_text",
+          "status": "passed",
+          "duration": 0.0008521080017089844,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 4.76837158203125e-06,
+          "teardown_duration": 9.5367431640625e-07
+        },
+        {
+          "name": "TestAppiumHandler.test_scroll_down",
+          "status": "passed",
+          "duration": 0.0004127025604248047,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 4.5299530029296875e-06,
+          "teardown_duration": 2.384185791015625e-07
+        },
+        {
+          "name": "TestAppiumHandler.test_take_screenshot",
+          "status": "passed",
+          "duration": 0.00034046173095703125,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 2.86102294921875e-06,
+          "teardown_duration": 1.430511474609375e-06
+        },
+        {
+          "name": "TestMobileSpider.test_mobile_config_loading",
+          "status": "passed",
+          "duration": 0.00020766258239746094,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 4,
+          "setup_duration": 0.00014472007751464844,
+          "teardown_duration": 4.124641418457031e-05
+        },
+        {
+          "name": "TestMobileSpider.test_mobile_spider_config_creation",
+          "status": "passed",
+          "duration": 0.00014543533325195312,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 5,
+          "setup_duration": 9.632110595703125e-05,
+          "teardown_duration": 3.6716461181640625e-05
+        },
+        {
+          "name": "TestMobileSpider.test_mobile_spider_initialization",
+          "status": "passed",
+          "duration": 0.00014829635620117188,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 4,
+          "setup_duration": 0.000102996826171875,
+          "teardown_duration": 2.8848648071289062e-05
+        },
+        {
+          "name": "TestMobileSpider.test_setup_mobile_environment",
+          "status": "passed",
+          "duration": 0.2006058692932129,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 6,
+          "setup_duration": 8.440017700195312e-05,
+          "teardown_duration": 8.177757263183594e-05
+        },
+        {
+          "name": "TestMobileSpiderIntegration.test_extract_list_data",
+          "status": "passed",
+          "duration": 1.0017142295837402,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 4.5299530029296875e-06,
+          "teardown_duration": 0.00012063980102539062
+        },
+        {
+          "name": "TestMobileSpiderIntegration.test_mobile_spider_full_workflow",
+          "status": "passed",
+          "duration": 0.3006250858306885,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 6,
+          "setup_duration": 6.198883056640625e-06,
+          "teardown_duration": 5.626678466796875e-05
+        },
+        {
+          "name": "TestMobileSpiderIntegration.test_navigate_to_url",
+          "status": "passed",
+          "duration": 3.814697265625e-05,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 3.5762786865234375e-06,
+          "teardown_duration": 1.7642974853515625e-05
+        },
+        {
+          "name": "TestMobileSpiderIntegration.test_scroll_and_collect",
+          "status": "passed",
+          "duration": 0.00021314620971679688,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 2.384185791015625e-06,
+          "teardown_duration": 1.8358230590820312e-05
+        }
+      ]
+    },
+    {
+      "suite_name": "Integration Tests",
+      "total_tests": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "success_rate": 100.0,
+      "total_duration": 0.4589557647705078,
+      "results": [
+        {
+          "name": "TestSpiderIntegration.test_end_to_end_spider_workflow",
+          "status": "passed",
+          "duration": 0.2211308479309082,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 16,
+          "setup_duration": 0.0001308917999267578,
+          "teardown_duration": 0.00010800361633300781
+        },
+        {
+          "name": "TestExampleSpiderIntegration.test_example_spider_workflow",
+          "status": "passed",
+          "duration": 0.11954116821289062,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 8,
+          "setup_duration": 0.0001049041748046875,
+          "teardown_duration": 8.940696716308594e-05
+        },
+        {
+          "name": "TestErrorHandling.test_network_error_handling",
+          "status": "passed",
+          "duration": 0.03867983818054199,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 0.00013589859008789062,
+          "teardown_duration": 4.410743713378906e-05
+        },
+        {
+          "name": "TestErrorHandling.test_parse_response_error",
+          "status": "passed",
+          "duration": 0.017368793487548828,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 0.00012493133544921875,
+          "teardown_duration": 4.5299530029296875e-05
+        },
+        {
+          "name": "TestConfigurationEdgeCases.test_empty_config_file",
+          "status": "passed",
+          "duration": 0.0001556873321533203,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 1.1920928955078125e-06,
+          "teardown_duration": 4.76837158203125e-07
+        },
+        {
+          "name": "TestConfigurationEdgeCases.test_malformed_config_file",
+          "status": "passed",
+          "duration": 0.00010228157043457031,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 1,
+          "setup_duration": 1.430511474609375e-06,
+          "teardown_duration": 2.384185791015625e-07
+        },
+        {
+          "name": "TestPerformance.test_concurrent_processing",
+          "status": "passed",
+          "duration": 0.06037282943725586,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 2,
+          "setup_duration": 8.296966552734375e-05,
+          "teardown_duration": 9.107589721679688e-05
+        },
+        {
+          "name": "TestDataFlow.test_data_pipeline",
+          "status": "passed",
+          "duration": 0.0007278919219970703,
+          "error_message": null,
+          "error_traceback": null,
+          "assertions": 7,
+          "setup_duration": 2.1457672119140625e-06,
+          "teardown_duration": 9.5367431640625e-07
+        }
+      ]
+    }
+  ]
+}

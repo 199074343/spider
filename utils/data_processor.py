@@ -74,10 +74,10 @@ class DataProcessor:
         
         # 去除多余空白字符
         text = re.sub(r'\s+', ' ', text)
-        # 去除首尾空白
-        text = text.strip()
         # 去除特殊字符
         text = re.sub(r'[^\w\s\u4e00-\u9fff]', '', text)
+        # 去除首尾空白（在最后执行）
+        text = text.strip()
         
         return text
     

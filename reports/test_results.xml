@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="54" failures="0" errors="0" time="2.745">
+  <testsuite name="Spider Core Tests" tests="10" failures="0" errors="0" time="0.244">
+    <testcase name="TestSpiderConfig.test_spider_config_creation" time="0.000"/>
+    <testcase name="TestSpiderConfig.test_spider_config_defaults" time="0.000"/>
+    <testcase name="TestSpider.test_get_urls_default" time="0.026"/>
+    <testcase name="TestSpider.test_parse_response_default" time="0.020"/>
+    <testcase name="TestSpider.test_save_results" time="0.020"/>
+    <testcase name="TestSpider.test_spider_config_loading" time="0.019"/>
+    <testcase name="TestSpider.test_spider_config_not_found" time="0.019"/>
+    <testcase name="TestSpider.test_spider_initialization" time="0.019"/>
+    <testcase name="TestSpider.test_spider_invalid_target" time="0.000"/>
+    <testcase name="TestSpiderIntegration.test_spider_full_workflow" time="0.119"/>
+  </testsuite>
+  <testsuite name="Utils Module Tests" tests="16" failures="0" errors="0" time="0.131">
+    <testcase name="TestDataProcessor.test_clean_text" time="0.001"/>
+    <testcase name="TestDataProcessor.test_extract_by_rules" time="0.001"/>
+    <testcase name="TestDataProcessor.test_extract_images" time="0.000"/>
+    <testcase name="TestDataProcessor.test_extract_links" time="0.000"/>
+    <testcase name="TestDataProcessor.test_extract_text" time="0.000"/>
+    <testcase name="TestDataProcessor.test_parse_html" time="0.000"/>
+    <testcase name="TestDataProcessor.test_parse_html_invalid" time="0.000"/>
+    <testcase name="TestStorage.test_load_json" time="0.002"/>
+    <testcase name="TestStorage.test_load_json_nonexistent" time="0.000"/>
+    <testcase name="TestStorage.test_save_csv" time="0.003"/>
+    <testcase name="TestStorage.test_save_empty_data" time="0.001"/>
+    <testcase name="TestStorage.test_save_excel" time="0.057"/>
+    <testcase name="TestStorage.test_save_json" time="0.002"/>
+    <testcase name="TestRequestHandler.test_fetch_max_retries_exceeded" time="0.020"/>
+    <testcase name="TestRequestHandler.test_fetch_retry_on_server_error" time="0.023"/>
+    <testcase name="TestRequestHandler.test_fetch_success" time="0.020"/>
+  </testsuite>
+  <testsuite name="Mobile Module Tests" tests="20" failures="0" errors="0" time="1.911">
+    <testcase name="TestAndroidEmulator.test_connect_device" time="0.100"/>
+    <testcase name="TestAndroidEmulator.test_get_device_info" time="0.000"/>
+    <testcase name="TestAndroidEmulator.test_install_app" time="0.100"/>
+    <testcase name="TestAndroidEmulator.test_start_emulator" time="0.100"/>
+    <testcase name="TestAndroidEmulator.test_stop_emulator" time="0.100"/>
+    <testcase name="TestAndroidEmulator.test_take_screenshot" time="0.000"/>
+    <testcase name="TestAppiumHandler.test_click_element" time="0.001"/>
+    <testcase name="TestAppiumHandler.test_find_element" time="0.001"/>
+    <testcase name="TestAppiumHandler.test_get_text" time="0.001"/>
+    <testcase name="TestAppiumHandler.test_input_text" time="0.001"/>
+    <testcase name="TestAppiumHandler.test_scroll_down" time="0.000"/>
+    <testcase name="TestAppiumHandler.test_take_screenshot" time="0.000"/>
+    <testcase name="TestMobileSpider.test_mobile_config_loading" time="0.000"/>
+    <testcase name="TestMobileSpider.test_mobile_spider_config_creation" time="0.000"/>
+    <testcase name="TestMobileSpider.test_mobile_spider_initialization" time="0.000"/>
+    <testcase name="TestMobileSpider.test_setup_mobile_environment" time="0.201"/>
+    <testcase name="TestMobileSpiderIntegration.test_extract_list_data" time="1.002"/>
+    <testcase name="TestMobileSpiderIntegration.test_mobile_spider_full_workflow" time="0.301"/>
+    <testcase name="TestMobileSpiderIntegration.test_navigate_to_url" time="0.000"/>
+    <testcase name="TestMobileSpiderIntegration.test_scroll_and_collect" time="0.000"/>
+  </testsuite>
+  <testsuite name="Integration Tests" tests="8" failures="0" errors="0" time="0.459">
+    <testcase name="TestSpiderIntegration.test_end_to_end_spider_workflow" time="0.221"/>
+    <testcase name="TestExampleSpiderIntegration.test_example_spider_workflow" time="0.120"/>
+    <testcase name="TestErrorHandling.test_network_error_handling" time="0.039"/>
+    <testcase name="TestErrorHandling.test_parse_response_error" time="0.017"/>
+    <testcase name="TestConfigurationEdgeCases.test_empty_config_file" time="0.000"/>
+    <testcase name="TestConfigurationEdgeCases.test_malformed_config_file" time="0.000"/>
+    <testcase name="TestPerformance.test_concurrent_processing" time="0.060"/>
+    <testcase name="TestDataFlow.test_data_pipeline" time="0.001"/>
+  </testsuite>
+</testsuites>

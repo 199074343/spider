@@ -84,6 +84,7 @@ class CustomSpider(Spider):
 
 ## 功能特性
 
+### 🌐 Web爬虫功能
 - 异步并发爬取
 - 自动重试机制
 - 多种输出格式（JSON、CSV、Excel）
@@ -93,9 +94,78 @@ class CustomSpider(Spider):
 - 图片链接提取
 - 用户代理轮换
 
+### 📱 移动端爬虫功能 (新增)
+- **Android模拟器集成** - 自动管理Android虚拟设备
+- **Appium自动化** - 支持移动应用和移动浏览器
+- **移动端数据爬取** - 原生应用界面操作和数据提取
+- **截图记录** - 自动截图记录爬取过程
+- **滚动收集** - 支持列表滚动和无限加载数据收集
+- **移动浏览器支持** - 通过Chrome浏览器爬取移动网站
+
 ## 示例运行
 
+### Web爬虫
 ```bash
 # 运行示例爬虫
 python example_spider.py
+
+# 命令行方式
+python main.py --target example_site --workers 5 --debug
 ```
+
+### 移动端爬虫 (新增)
+```bash
+# 环境检查和设置
+python setup_mobile.py                    # 安装移动端依赖
+python mobile_tools.py check              # 检查环境
+python mobile_tools.py start-appium       # 启动Appium服务器
+
+# 运行移动端爬虫
+python main.py --target mobile_app --mobile --debug        # 移动应用爬虫
+python main.py --target mobile_browser --mobile --debug    # 移动浏览器爬虫
+
+# 运行移动端示例
+python example_mobile_spider.py           # 移动应用示例
+python example_mobile_spider.py browser   # 移动浏览器示例
+
+# 测试移动端集成
+python test_mobile_integration.py         # 完整集成测试
+```
+
+详细的移动端使用说明请参考 [MOBILE_README.md](MOBILE_README.md)
+
+## 🧪 测试功能 (新增)
+
+项目包含完整的自定义单元测试框架:
+
+### 快速测试
+```bash
+python verify_tests.py        # 验证测试系统
+python quick_test.py          # 快速功能验证
+python test_all.py            # 完整测试套件
+```
+
+### 分类测试
+```bash
+python run_tests.py --suite spider        # 核心爬虫测试
+python run_tests.py --suite utils         # 工具模块测试
+python run_tests.py --suite mobile        # 移动端测试
+python run_tests.py --suite integration   # 集成测试
+```
+
+### 自动化测试
+```bash
+python test_automation.py ci              # CI管道测试
+python test_automation.py smoke           # 冒烟测试
+python test_automation.py coverage        # 覆盖率分析
+```
+
+### 测试特性
+- **自定义测试框架** - 支持异步测试和丰富断言
+- **Mock对象库** - 完整的HTTP、移动端、日志Mock
+- **多格式报告** - HTML、JSON、JUnit XML格式
+- **覆盖率分析** - 代码覆盖率统计和分析
+- **CI/CD集成** - GitHub Actions自动化测试
+- **性能测试** - 并发性能验证
+
+详细的测试使用说明请参考 [TESTING_GUIDE.md](TESTING_GUIDE.md)

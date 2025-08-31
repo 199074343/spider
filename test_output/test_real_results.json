@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://httpbin.org/status/200",
+    "error": "Connection closed",
+    "status": 200
+  },
+  {
+    "url": "https://httpbin.org/json",
+    "error": "Connection closed",
+    "status": 200
+  },
+  {
+    "url": "https://httpbin.org/html",
+    "error": "Connection closed",
+    "status": 200
+  }
+]

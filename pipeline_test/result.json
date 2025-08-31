@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Pipeline Test",
+    "content": "This is pipeline test content",
+    "links": [
+      "https://test.com/link1",
+      "https://test.com/link2"
+    ],
+    "images": [
+      "https://test.com/image1.jpg",
+      "https://test.com/image2.jpg"
+    ]
+  }
+]

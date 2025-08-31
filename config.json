@@ -1,0 +1,27 @@
+{
+  "example_site": {
+    "target": "example_site",
+    "base_url": "https://example.com",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    "delay": 1.0,
+    "timeout": 30,
+    "max_retries": 3,
+    "output_format": "json",
+    "output_path": "data"
+  },
+  "news_site": {
+    "target": "news_site",
+    "base_url": "https://news.example.com",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    },
+    "delay": 2.0,
+    "timeout": 45,
+    "max_retries": 5,
+    "output_format": "excel",
+    "output_path": "news_data"
+  }
+}

@@ -1,16 +1,61 @@
 {
   "summary": {
-    "total_source_files": 15,
+    "total_source_files": 16,
     "total_test_files": 6,
-    "total_classes": 16,
-    "total_functions": 18,
-    "total_methods": 21,
+    "total_classes": 18,
+    "total_functions": 21,
+    "total_methods": 23,
     "total_tests": 33,
-    "total_lines_of_code": 1961,
-    "estimated_file_coverage": 53.333333333333336,
-    "test_to_code_ratio": 0.6
+    "total_lines_of_code": 2186,
+    "estimated_file_coverage": 50.0,
+    "test_to_code_ratio": 0.532258064516129
   },
   "source_files": {
+    "demo.py": {
+      "file": "demo.py",
+      "classes": [
+        {
+          "name": "DemoSpider",
+          "line": 22,
+          "methods": []
+        },
+        {
+          "name": "DemoTestCase",
+          "line": 150,
+          "methods": [
+            {
+              "name": "test_basic_assertions",
+              "line": 151,
+              "is_async": false
+            },
+            {
+              "name": "test_string_operations",
+              "line": 157,
+              "is_async": false
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "demo_data_processing",
+          "line": 61,
+          "is_async": false
+        },
+        {
+          "name": "demo_configuration",
+          "line": 179,
+          "is_async": false
+        },
+        {
+          "name": "show_project_structure",
+          "line": 203,
+          "is_async": false
+        }
+      ],
+      "methods": [],
+      "lines_of_code": 215
+    },
     "verify_tests.py": {
       "file": "verify_tests.py",
       "classes": [
@@ -143,16 +188,16 @@
         },
         {
           "name": "MobileSpiderFactory",
-          "line": 306,
+          "line": 324,
           "methods": [
             {
               "name": "create_app_spider",
-              "line": 310,
+              "line": 328,
               "is_async": false
             },
             {
               "name": "create_browser_spider",
-              "line": 319,
+              "line": 337,
               "is_async": false
             }
           ]
@@ -160,7 +205,7 @@
       ],
       "functions": [],
       "methods": [],
-      "lines_of_code": 229
+      "lines_of_code": 239
     },
     "setup_mobile.py": {
       "file": "setup_mobile.py",
@@ -756,12 +801,7 @@
         },
         {
           "name": "TestMobileSpiderIntegration",
-          "line": 271,
-          "test_methods": []
-        },
-        {
-          "name": "TestMobileSpiderImpl",
-          "line": 313,
+          "line": 292,
           "test_methods": []
         }
       ],
@@ -777,117 +817,117 @@
   },
   "tested_components": {
     "tests/test_integration.py": [
-      "os",
-      "tests.mocks.MockStorage",
-      "tests.test_framework.create_test_suite",
-      "tests.mocks.TestDataGenerator",
-      "asyncio",
-      "utils.storage.Storage",
-      "unittest.mock.Mock",
-      "shutil",
-      "unittest.mock.AsyncMock",
-      "tests.test_framework.TestCase",
+      "tempfile",
       "tests.mocks.MockLogger",
+      "utils.storage.Storage",
+      "os",
+      "spider.Spider",
+      "unittest.mock.Mock",
       "example_spider.ExampleSpider",
       "time",
-      "tests.mocks.MockHttpSession",
-      "spider.Spider",
       "unittest.mock.patch",
-      "tempfile",
+      "asyncio",
+      "tests.mocks.TestDataGenerator",
+      "tests.mocks.MockHttpSession",
+      "shutil",
+      "tests.mocks.MockStorage",
+      "sys",
       "tests.mocks.MockHttpResponse",
-      "utils.data_processor.DataProcessor",
-      "pathlib.Path",
       "json",
-      "sys"
+      "utils.data_processor.DataProcessor",
+      "unittest.mock.AsyncMock",
+      "tests.test_framework.TestCase",
+      "pathlib.Path",
+      "tests.test_framework.create_test_suite"
     ],
     "tests/test_framework.py": [
-      "inspect",
-      "functools",
       "time",
-      "typing.Dict",
-      "os",
-      "dataclasses.dataclass",
-      "typing.Any",
       "json",
-      "traceback",
-      "asyncio",
-      "enum.Enum",
       "tempfile",
       "typing.List",
+      "typing.Dict",
+      "inspect",
+      "functools",
+      "asyncio",
+      "dataclasses.dataclass",
+      "enum.Enum",
+      "typing.Any",
       "typing.Callable",
+      "os",
+      "traceback",
       "typing.Optional"
     ],
     "tests/test_spider.py": [
-      "shutil",
-      "os",
-      "tests.test_framework.TestCase",
-      "pathlib.Path",
       "json",
-      "sys",
-      "tests.mocks.MockLogger",
-      "tests.test_framework.create_test_suite",
+      "tempfile",
       "tests.mocks.MockHttpSession",
-      "tests.mocks.TestDataGenerator",
+      "shutil",
+      "tests.test_framework.TestCase",
+      "tests.mocks.MockLogger",
       "tests.mocks.MockStorage",
-      "spider.Spider",
       "asyncio",
       "spider.SpiderConfig",
-      "tempfile",
-      "tests.mocks.MockHttpResponse"
+      "sys",
+      "pathlib.Path",
+      "os",
+      "tests.test_framework.create_test_suite",
+      "tests.mocks.MockHttpResponse",
+      "tests.mocks.TestDataGenerator",
+      "spider.Spider"
     ],
     "tests/test_config_manager.py": [
+      "json",
       "shutil",
       "typing.Dict",
+      "typing.Any",
       "os",
       "pathlib.Path",
-      "typing.Any",
-      "json",
       "typing.Optional"
     ],
     "tests/test_utils.py": [
-      "utils.data_processor.DataProcessor",
-      "shutil",
-      "os",
-      "tests.test_framework.TestCase",
-      "pathlib.Path",
-      "utils.storage.Storage",
       "json",
-      "sys",
-      "tests.mocks.MockLogger",
-      "tests.test_framework.create_test_suite",
-      "tests.mocks.MockHttpSession",
-      "tests.mocks.TestDataGenerator",
-      "utils.request_handler.RequestHandler",
-      "asyncio",
-      "pandas",
       "tempfile",
-      "tests.mocks.MockHttpResponse"
+      "tests.mocks.MockHttpSession",
+      "utils.data_processor.DataProcessor",
+      "pandas",
+      "tests.test_framework.TestCase",
+      "tests.mocks.MockLogger",
+      "shutil",
+      "asyncio",
+      "sys",
+      "utils.storage.Storage",
+      "utils.request_handler.RequestHandler",
+      "pathlib.Path",
+      "os",
+      "tests.test_framework.create_test_suite",
+      "tests.mocks.MockHttpResponse",
+      "tests.mocks.TestDataGenerator"
     ],
     "tests/test_mobile.py": [
+      "tempfile",
+      "tests.mocks.MockAndroidEmulator",
+      "tests.mocks.MockLogger",
       "os",
-      "utils.android_emulator.AndroidEmulator",
-      "utils.appium_handler.AppiumHandler",
-      "tests.test_framework.create_test_suite",
-      "mocks.MockStorage",
-      "tests.mocks.TestDataGenerator",
-      "asyncio",
       "unittest.mock.Mock",
+      "utils.appium_handler.AppiumHandler",
+      "mobile_spider.MobileSpiderConfig",
+      "unittest.mock.patch",
+      "asyncio",
+      "tests.mocks.MockAppiumDriver",
+      "tests.mocks.TestDataGenerator",
       "shutil",
+      "sys",
+      "mobile_spider.MobileSpider",
+      "json",
       "unittest.mock.AsyncMock",
       "tests.test_framework.TestCase",
-      "tests.mocks.MockLogger",
-      "tests.mocks.MockAppiumDriver",
-      "mobile_spider.MobileSpiderConfig",
-      "tests.mocks.MockAndroidEmulator",
-      "mobile_spider.MobileSpider",
-      "unittest.mock.patch",
-      "tempfile",
+      "utils.android_emulator.AndroidEmulator",
       "pathlib.Path",
-      "json",
-      "sys"
+      "tests.test_framework.create_test_suite"
     ]
   },
   "uncovered_files": [
+    "demo.py",
     "verify_tests.py",
     "example_mobile_spider.py",
     "mobile_tools.py",

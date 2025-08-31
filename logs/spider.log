@@ -232,3 +232,494 @@
 2025-08-31 16:02:05,302 - spider - INFO - 数据已保存到: test_output/test_real_results.json
 2025-08-31 16:02:05,302 - spider - INFO - 保存了 3 条有效数据
 2025-08-31 16:02:05,303 - spider - INFO - 爬虫任务完成
+2025-08-31 16:04:20,601 - spider - INFO - 所有测试模块加载成功
+2025-08-31 16:04:20,601 - spider - INFO - 开始运行所有测试
+2025-08-31 16:04:20,601 - spider - INFO - 开始运行测试套件: Spider Core Tests
+2025-08-31 16:04:20,601 - spider - DEBUG - 运行测试: TestSpiderConfig.test_spider_config_creation
+2025-08-31 16:04:20,601 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_creation - passed (0.000s)
+2025-08-31 16:04:20,601 - spider - DEBUG - 运行测试: TestSpiderConfig.test_spider_config_defaults
+2025-08-31 16:04:20,601 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_defaults - passed (0.000s)
+2025-08-31 16:04:20,601 - spider - DEBUG - 运行测试: TestSpider.test_get_urls_default
+2025-08-31 16:04:20,626 - spider - INFO - ✅ TestSpider.test_get_urls_default - passed (0.024s)
+2025-08-31 16:04:20,626 - spider - DEBUG - 运行测试: TestSpider.test_parse_response_default
+2025-08-31 16:04:20,646 - spider - INFO - ✅ TestSpider.test_parse_response_default - passed (0.020s)
+2025-08-31 16:04:20,646 - spider - DEBUG - 运行测试: TestSpider.test_save_results
+2025-08-31 16:04:20,666 - spider - INFO - ✅ TestSpider.test_save_results - passed (0.020s)
+2025-08-31 16:04:20,666 - spider - DEBUG - 运行测试: TestSpider.test_spider_config_loading
+2025-08-31 16:04:20,686 - spider - INFO - ✅ TestSpider.test_spider_config_loading - passed (0.019s)
+2025-08-31 16:04:20,686 - spider - DEBUG - 运行测试: TestSpider.test_spider_config_not_found
+2025-08-31 16:04:20,705 - spider - INFO - ✅ TestSpider.test_spider_config_not_found - passed (0.019s)
+2025-08-31 16:04:20,705 - spider - DEBUG - 运行测试: TestSpider.test_spider_initialization
+2025-08-31 16:04:20,723 - spider - INFO - ✅ TestSpider.test_spider_initialization - passed (0.019s)
+2025-08-31 16:04:20,723 - spider - DEBUG - 运行测试: TestSpider.test_spider_invalid_target
+2025-08-31 16:04:20,724 - spider - INFO - ✅ TestSpider.test_spider_invalid_target - passed (0.000s)
+2025-08-31 16:04:20,724 - spider - DEBUG - 运行测试: TestSpiderIntegration.test_spider_full_workflow
+2025-08-31 16:04:20,843 - spider - INFO - ✅ TestSpiderIntegration.test_spider_full_workflow - passed (0.119s)
+2025-08-31 16:04:20,843 - spider - INFO - 开始运行测试套件: Utils Module Tests
+2025-08-31 16:04:20,843 - spider - DEBUG - 运行测试: TestDataProcessor.test_clean_text
+2025-08-31 16:04:20,845 - spider - INFO - ❌ TestDataProcessor.test_clean_text - failed (0.002s)
+2025-08-31 16:04:20,845 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_by_rules
+2025-08-31 16:04:20,846 - spider - INFO - ✅ TestDataProcessor.test_extract_by_rules - passed (0.001s)
+2025-08-31 16:04:20,846 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_images
+2025-08-31 16:04:20,846 - spider - INFO - ✅ TestDataProcessor.test_extract_images - passed (0.000s)
+2025-08-31 16:04:20,846 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_links
+2025-08-31 16:04:20,847 - spider - INFO - ✅ TestDataProcessor.test_extract_links - passed (0.000s)
+2025-08-31 16:04:20,847 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_text
+2025-08-31 16:04:20,847 - spider - INFO - ✅ TestDataProcessor.test_extract_text - passed (0.000s)
+2025-08-31 16:04:20,847 - spider - DEBUG - 运行测试: TestDataProcessor.test_parse_html
+2025-08-31 16:04:20,848 - spider - INFO - ✅ TestDataProcessor.test_parse_html - passed (0.000s)
+2025-08-31 16:04:20,848 - spider - DEBUG - 运行测试: TestDataProcessor.test_parse_html_invalid
+2025-08-31 16:04:20,848 - spider - INFO - ✅ TestDataProcessor.test_parse_html_invalid - passed (0.000s)
+2025-08-31 16:04:20,848 - spider - DEBUG - 运行测试: TestStorage.test_load_json
+2025-08-31 16:04:20,850 - spider - INFO - ✅ TestStorage.test_load_json - passed (0.002s)
+2025-08-31 16:04:20,850 - spider - DEBUG - 运行测试: TestStorage.test_load_json_nonexistent
+2025-08-31 16:04:20,850 - spider - INFO - ✅ TestStorage.test_load_json_nonexistent - passed (0.000s)
+2025-08-31 16:04:20,850 - spider - DEBUG - 运行测试: TestStorage.test_save_csv
+2025-08-31 16:04:20,853 - spider - INFO - ✅ TestStorage.test_save_csv - passed (0.003s)
+2025-08-31 16:04:20,853 - spider - DEBUG - 运行测试: TestStorage.test_save_empty_data
+2025-08-31 16:04:20,854 - spider - INFO - ✅ TestStorage.test_save_empty_data - passed (0.001s)
+2025-08-31 16:04:20,854 - spider - DEBUG - 运行测试: TestStorage.test_save_excel
+2025-08-31 16:04:20,911 - spider - INFO - ✅ TestStorage.test_save_excel - passed (0.057s)
+2025-08-31 16:04:20,911 - spider - DEBUG - 运行测试: TestStorage.test_save_json
+2025-08-31 16:04:20,911 - spider - INFO - ✅ TestStorage.test_save_json - passed (0.001s)
+2025-08-31 16:04:20,911 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_max_retries_exceeded
+2025-08-31 16:04:23,942 - spider - INFO - ❌ TestRequestHandler.test_fetch_max_retries_exceeded - failed (3.030s)
+2025-08-31 16:04:23,942 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_retry_on_server_error
+2025-08-31 16:04:30,977 - spider - INFO - ❌ TestRequestHandler.test_fetch_retry_on_server_error - failed (7.035s)
+2025-08-31 16:04:30,977 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_success
+2025-08-31 16:04:38,010 - spider - INFO - ❌ TestRequestHandler.test_fetch_success - failed (7.033s)
+2025-08-31 16:04:38,010 - spider - INFO - 开始运行测试套件: Mobile Module Tests
+2025-08-31 16:04:38,011 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_connect_device
+2025-08-31 16:04:38,111 - spider - INFO - ✅ TestAndroidEmulator.test_connect_device - passed (0.100s)
+2025-08-31 16:04:38,111 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_get_device_info
+2025-08-31 16:04:38,111 - spider - INFO - ✅ TestAndroidEmulator.test_get_device_info - passed (0.000s)
+2025-08-31 16:04:38,111 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_install_app
+2025-08-31 16:04:38,211 - spider - INFO - ✅ TestAndroidEmulator.test_install_app - passed (0.100s)
+2025-08-31 16:04:38,211 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_start_emulator
+2025-08-31 16:04:38,312 - spider - INFO - ✅ TestAndroidEmulator.test_start_emulator - passed (0.100s)
+2025-08-31 16:04:38,312 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_stop_emulator
+2025-08-31 16:04:38,412 - spider - INFO - ✅ TestAndroidEmulator.test_stop_emulator - passed (0.100s)
+2025-08-31 16:04:38,412 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_take_screenshot
+2025-08-31 16:04:38,412 - spider - INFO - ✅ TestAndroidEmulator.test_take_screenshot - passed (0.000s)
+2025-08-31 16:04:38,412 - spider - DEBUG - 运行测试: TestAppiumHandler.test_click_element
+2025-08-31 16:04:38,413 - spider - INFO - ✅ TestAppiumHandler.test_click_element - passed (0.001s)
+2025-08-31 16:04:38,413 - spider - DEBUG - 运行测试: TestAppiumHandler.test_find_element
+2025-08-31 16:04:38,414 - spider - INFO - ✅ TestAppiumHandler.test_find_element - passed (0.001s)
+2025-08-31 16:04:38,414 - spider - DEBUG - 运行测试: TestAppiumHandler.test_get_text
+2025-08-31 16:04:38,415 - spider - INFO - ✅ TestAppiumHandler.test_get_text - passed (0.000s)
+2025-08-31 16:04:38,415 - spider - DEBUG - 运行测试: TestAppiumHandler.test_input_text
+2025-08-31 16:04:38,416 - spider - INFO - ✅ TestAppiumHandler.test_input_text - passed (0.001s)
+2025-08-31 16:04:38,416 - spider - DEBUG - 运行测试: TestAppiumHandler.test_scroll_down
+2025-08-31 16:04:38,417 - spider - INFO - ✅ TestAppiumHandler.test_scroll_down - passed (0.000s)
+2025-08-31 16:04:38,417 - spider - DEBUG - 运行测试: TestAppiumHandler.test_take_screenshot
+2025-08-31 16:04:38,417 - spider - INFO - ✅ TestAppiumHandler.test_take_screenshot - passed (0.000s)
+2025-08-31 16:04:38,417 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_config_loading
+2025-08-31 16:04:38,418 - spider - INFO - ❌ TestMobileSpider.test_mobile_config_loading - error (0.001s)
+2025-08-31 16:04:38,418 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_spider_config_creation
+2025-08-31 16:04:38,419 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_config_creation - passed (0.000s)
+2025-08-31 16:04:38,419 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_spider_initialization
+2025-08-31 16:04:38,419 - spider - INFO - ❌ TestMobileSpider.test_mobile_spider_initialization - error (0.001s)
+2025-08-31 16:04:38,419 - spider - DEBUG - 运行测试: TestMobileSpider.test_setup_mobile_environment
+2025-08-31 16:04:38,420 - spider - INFO - ❌ TestMobileSpider.test_setup_mobile_environment - error (0.001s)
+2025-08-31 16:04:38,420 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_extract_list_data
+2025-08-31 16:04:38,422 - spider - INFO - ❌ TestMobileSpiderIntegration.test_extract_list_data - error (0.001s)
+2025-08-31 16:04:38,422 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_mobile_spider_full_workflow
+2025-08-31 16:04:38,422 - spider - INFO - ❌ TestMobileSpiderIntegration.test_mobile_spider_full_workflow - error (0.001s)
+2025-08-31 16:04:38,422 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_navigate_to_url
+2025-08-31 16:04:38,423 - spider - INFO - ❌ TestMobileSpiderIntegration.test_navigate_to_url - error (0.001s)
+2025-08-31 16:04:38,423 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_scroll_and_collect
+2025-08-31 16:04:38,424 - spider - INFO - ❌ TestMobileSpiderIntegration.test_scroll_and_collect - error (0.001s)
+2025-08-31 16:04:38,424 - spider - INFO - 开始运行测试套件: Integration Tests
+2025-08-31 16:04:38,424 - spider - DEBUG - 运行测试: TestSpiderIntegration.test_end_to_end_spider_workflow
+2025-08-31 16:04:38,645 - spider - INFO - ✅ TestSpiderIntegration.test_end_to_end_spider_workflow - passed (0.221s)
+2025-08-31 16:04:38,645 - spider - DEBUG - 运行测试: TestExampleSpiderIntegration.test_example_spider_workflow
+2025-08-31 16:04:38,766 - spider - INFO - ✅ TestExampleSpiderIntegration.test_example_spider_workflow - passed (0.121s)
+2025-08-31 16:04:38,766 - spider - DEBUG - 运行测试: TestErrorHandling.test_network_error_handling
+2025-08-31 16:04:38,810 - spider - INFO - ✅ TestErrorHandling.test_network_error_handling - passed (0.044s)
+2025-08-31 16:04:38,810 - spider - DEBUG - 运行测试: TestErrorHandling.test_parse_response_error
+2025-08-31 16:04:38,827 - spider - INFO - ✅ TestErrorHandling.test_parse_response_error - passed (0.017s)
+2025-08-31 16:04:38,828 - spider - DEBUG - 运行测试: TestConfigurationEdgeCases.test_empty_config_file
+2025-08-31 16:04:38,828 - spider - INFO - ✅ TestConfigurationEdgeCases.test_empty_config_file - passed (0.000s)
+2025-08-31 16:04:38,828 - spider - DEBUG - 运行测试: TestConfigurationEdgeCases.test_malformed_config_file
+2025-08-31 16:04:38,828 - spider - INFO - ✅ TestConfigurationEdgeCases.test_malformed_config_file - passed (0.000s)
+2025-08-31 16:04:38,828 - spider - DEBUG - 运行测试: TestPerformance.test_concurrent_processing
+2025-08-31 16:04:38,889 - spider - INFO - ✅ TestPerformance.test_concurrent_processing - passed (0.061s)
+2025-08-31 16:04:38,889 - spider - DEBUG - 运行测试: TestDataFlow.test_data_pipeline
+2025-08-31 16:04:38,890 - spider - INFO - ✅ TestDataFlow.test_data_pipeline - passed (0.001s)
+2025-08-31 16:04:38,890 - spider - INFO - HTML报告已生成: reports/test_report.html
+2025-08-31 16:08:52,605 - spider - INFO - 所有测试模块加载成功
+2025-08-31 16:08:52,605 - spider - INFO - 开始运行所有测试
+2025-08-31 16:08:52,605 - spider - INFO - 开始运行测试套件: Spider Core Tests
+2025-08-31 16:08:52,605 - spider - DEBUG - 运行测试: TestSpiderConfig.test_spider_config_creation
+2025-08-31 16:08:52,605 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_creation - passed (0.000s)
+2025-08-31 16:08:52,605 - spider - DEBUG - 运行测试: TestSpiderConfig.test_spider_config_defaults
+2025-08-31 16:08:52,605 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_defaults - passed (0.000s)
+2025-08-31 16:08:52,605 - spider - DEBUG - 运行测试: TestSpider.test_get_urls_default
+2025-08-31 16:08:52,632 - spider - INFO - ✅ TestSpider.test_get_urls_default - passed (0.026s)
+2025-08-31 16:08:52,632 - spider - DEBUG - 运行测试: TestSpider.test_parse_response_default
+2025-08-31 16:08:52,652 - spider - INFO - ✅ TestSpider.test_parse_response_default - passed (0.020s)
+2025-08-31 16:08:52,652 - spider - DEBUG - 运行测试: TestSpider.test_save_results
+2025-08-31 16:08:52,672 - spider - INFO - ✅ TestSpider.test_save_results - passed (0.020s)
+2025-08-31 16:08:52,672 - spider - DEBUG - 运行测试: TestSpider.test_spider_config_loading
+2025-08-31 16:08:52,691 - spider - INFO - ✅ TestSpider.test_spider_config_loading - passed (0.019s)
+2025-08-31 16:08:52,691 - spider - DEBUG - 运行测试: TestSpider.test_spider_config_not_found
+2025-08-31 16:08:52,710 - spider - INFO - ✅ TestSpider.test_spider_config_not_found - passed (0.019s)
+2025-08-31 16:08:52,710 - spider - DEBUG - 运行测试: TestSpider.test_spider_initialization
+2025-08-31 16:08:52,729 - spider - INFO - ✅ TestSpider.test_spider_initialization - passed (0.018s)
+2025-08-31 16:08:52,729 - spider - DEBUG - 运行测试: TestSpider.test_spider_invalid_target
+2025-08-31 16:08:52,729 - spider - INFO - ✅ TestSpider.test_spider_invalid_target - passed (0.000s)
+2025-08-31 16:08:52,729 - spider - DEBUG - 运行测试: TestSpiderIntegration.test_spider_full_workflow
+2025-08-31 16:08:52,848 - spider - INFO - ✅ TestSpiderIntegration.test_spider_full_workflow - passed (0.119s)
+2025-08-31 16:08:52,848 - spider - INFO - 开始运行测试套件: Utils Module Tests
+2025-08-31 16:08:52,848 - spider - DEBUG - 运行测试: TestDataProcessor.test_clean_text
+2025-08-31 16:08:52,849 - spider - INFO - ✅ TestDataProcessor.test_clean_text - passed (0.001s)
+2025-08-31 16:08:52,849 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_by_rules
+2025-08-31 16:08:52,850 - spider - INFO - ✅ TestDataProcessor.test_extract_by_rules - passed (0.001s)
+2025-08-31 16:08:52,850 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_images
+2025-08-31 16:08:52,851 - spider - INFO - ✅ TestDataProcessor.test_extract_images - passed (0.000s)
+2025-08-31 16:08:52,851 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_links
+2025-08-31 16:08:52,851 - spider - INFO - ✅ TestDataProcessor.test_extract_links - passed (0.000s)
+2025-08-31 16:08:52,851 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_text
+2025-08-31 16:08:52,852 - spider - INFO - ✅ TestDataProcessor.test_extract_text - passed (0.000s)
+2025-08-31 16:08:52,852 - spider - DEBUG - 运行测试: TestDataProcessor.test_parse_html
+2025-08-31 16:08:52,852 - spider - INFO - ✅ TestDataProcessor.test_parse_html - passed (0.000s)
+2025-08-31 16:08:52,852 - spider - DEBUG - 运行测试: TestDataProcessor.test_parse_html_invalid
+2025-08-31 16:08:52,852 - spider - INFO - ✅ TestDataProcessor.test_parse_html_invalid - passed (0.000s)
+2025-08-31 16:08:52,852 - spider - DEBUG - 运行测试: TestStorage.test_load_json
+2025-08-31 16:08:52,854 - spider - INFO - ✅ TestStorage.test_load_json - passed (0.002s)
+2025-08-31 16:08:52,854 - spider - DEBUG - 运行测试: TestStorage.test_load_json_nonexistent
+2025-08-31 16:08:52,855 - spider - INFO - ✅ TestStorage.test_load_json_nonexistent - passed (0.000s)
+2025-08-31 16:08:52,855 - spider - DEBUG - 运行测试: TestStorage.test_save_csv
+2025-08-31 16:08:52,858 - spider - INFO - ✅ TestStorage.test_save_csv - passed (0.004s)
+2025-08-31 16:08:52,858 - spider - DEBUG - 运行测试: TestStorage.test_save_empty_data
+2025-08-31 16:08:52,859 - spider - INFO - ✅ TestStorage.test_save_empty_data - passed (0.001s)
+2025-08-31 16:08:52,859 - spider - DEBUG - 运行测试: TestStorage.test_save_excel
+2025-08-31 16:08:52,918 - spider - INFO - ✅ TestStorage.test_save_excel - passed (0.058s)
+2025-08-31 16:08:52,918 - spider - DEBUG - 运行测试: TestStorage.test_save_json
+2025-08-31 16:08:52,919 - spider - INFO - ✅ TestStorage.test_save_json - passed (0.001s)
+2025-08-31 16:08:52,919 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_max_retries_exceeded
+2025-08-31 16:08:52,940 - spider - INFO - ✅ TestRequestHandler.test_fetch_max_retries_exceeded - passed (0.021s)
+2025-08-31 16:08:52,940 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_retry_on_server_error
+2025-08-31 16:08:52,966 - spider - INFO - ❌ TestRequestHandler.test_fetch_retry_on_server_error - failed (0.027s)
+2025-08-31 16:08:52,966 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_success
+2025-08-31 16:08:52,986 - spider - INFO - ✅ TestRequestHandler.test_fetch_success - passed (0.019s)
+2025-08-31 16:08:52,986 - spider - INFO - 开始运行测试套件: Mobile Module Tests
+2025-08-31 16:08:52,986 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_connect_device
+2025-08-31 16:08:53,086 - spider - INFO - ✅ TestAndroidEmulator.test_connect_device - passed (0.100s)
+2025-08-31 16:08:53,086 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_get_device_info
+2025-08-31 16:08:53,086 - spider - INFO - ✅ TestAndroidEmulator.test_get_device_info - passed (0.000s)
+2025-08-31 16:08:53,086 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_install_app
+2025-08-31 16:08:53,187 - spider - INFO - ✅ TestAndroidEmulator.test_install_app - passed (0.100s)
+2025-08-31 16:08:53,187 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_start_emulator
+2025-08-31 16:08:53,287 - spider - INFO - ✅ TestAndroidEmulator.test_start_emulator - passed (0.100s)
+2025-08-31 16:08:53,287 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_stop_emulator
+2025-08-31 16:08:53,387 - spider - INFO - ✅ TestAndroidEmulator.test_stop_emulator - passed (0.100s)
+2025-08-31 16:08:53,387 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_take_screenshot
+2025-08-31 16:08:53,388 - spider - INFO - ✅ TestAndroidEmulator.test_take_screenshot - passed (0.000s)
+2025-08-31 16:08:53,388 - spider - DEBUG - 运行测试: TestAppiumHandler.test_click_element
+2025-08-31 16:08:53,388 - spider - INFO - ✅ TestAppiumHandler.test_click_element - passed (0.001s)
+2025-08-31 16:08:53,388 - spider - DEBUG - 运行测试: TestAppiumHandler.test_find_element
+2025-08-31 16:08:53,389 - spider - INFO - ✅ TestAppiumHandler.test_find_element - passed (0.001s)
+2025-08-31 16:08:53,389 - spider - DEBUG - 运行测试: TestAppiumHandler.test_get_text
+2025-08-31 16:08:53,390 - spider - INFO - ✅ TestAppiumHandler.test_get_text - passed (0.001s)
+2025-08-31 16:08:53,390 - spider - DEBUG - 运行测试: TestAppiumHandler.test_input_text
+2025-08-31 16:08:53,390 - spider - INFO - ✅ TestAppiumHandler.test_input_text - passed (0.000s)
+2025-08-31 16:08:53,391 - spider - DEBUG - 运行测试: TestAppiumHandler.test_scroll_down
+2025-08-31 16:08:53,391 - spider - INFO - ✅ TestAppiumHandler.test_scroll_down - passed (0.000s)
+2025-08-31 16:08:53,391 - spider - DEBUG - 运行测试: TestAppiumHandler.test_take_screenshot
+2025-08-31 16:08:53,391 - spider - INFO - ✅ TestAppiumHandler.test_take_screenshot - passed (0.000s)
+2025-08-31 16:08:53,391 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_config_loading
+2025-08-31 16:08:53,392 - spider - INFO - ✅ TestMobileSpider.test_mobile_config_loading - passed (0.000s)
+2025-08-31 16:08:53,392 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_spider_config_creation
+2025-08-31 16:08:53,392 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_config_creation - passed (0.000s)
+2025-08-31 16:08:53,392 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_spider_initialization
+2025-08-31 16:08:53,392 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_initialization - passed (0.000s)
+2025-08-31 16:08:53,392 - spider - DEBUG - 运行测试: TestMobileSpider.test_setup_mobile_environment
+2025-08-31 16:08:53,593 - spider - INFO - ✅ TestMobileSpider.test_setup_mobile_environment - passed (0.201s)
+2025-08-31 16:08:53,593 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_extract_list_data
+2025-08-31 16:08:54,595 - spider - INFO - ✅ TestMobileSpiderIntegration.test_extract_list_data - passed (1.002s)
+2025-08-31 16:08:54,595 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_mobile_spider_full_workflow
+2025-08-31 16:08:54,895 - spider - INFO - ✅ TestMobileSpiderIntegration.test_mobile_spider_full_workflow - passed (0.301s)
+2025-08-31 16:08:54,896 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_navigate_to_url
+2025-08-31 16:08:54,896 - spider - INFO - ✅ TestMobileSpiderIntegration.test_navigate_to_url - passed (0.000s)
+2025-08-31 16:08:54,896 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_scroll_and_collect
+2025-08-31 16:08:54,896 - spider - INFO - ✅ TestMobileSpiderIntegration.test_scroll_and_collect - passed (0.000s)
+2025-08-31 16:08:54,896 - spider - INFO - 开始运行测试套件: Integration Tests
+2025-08-31 16:08:54,896 - spider - DEBUG - 运行测试: TestSpiderIntegration.test_end_to_end_spider_workflow
+2025-08-31 16:08:55,117 - spider - INFO - ✅ TestSpiderIntegration.test_end_to_end_spider_workflow - passed (0.221s)
+2025-08-31 16:08:55,117 - spider - DEBUG - 运行测试: TestExampleSpiderIntegration.test_example_spider_workflow
+2025-08-31 16:08:55,237 - spider - INFO - ✅ TestExampleSpiderIntegration.test_example_spider_workflow - passed (0.120s)
+2025-08-31 16:08:55,237 - spider - DEBUG - 运行测试: TestErrorHandling.test_network_error_handling
+2025-08-31 16:08:55,274 - spider - INFO - ✅ TestErrorHandling.test_network_error_handling - passed (0.037s)
+2025-08-31 16:08:55,275 - spider - DEBUG - 运行测试: TestErrorHandling.test_parse_response_error
+2025-08-31 16:08:55,292 - spider - INFO - ✅ TestErrorHandling.test_parse_response_error - passed (0.018s)
+2025-08-31 16:08:55,292 - spider - DEBUG - 运行测试: TestConfigurationEdgeCases.test_empty_config_file
+2025-08-31 16:08:55,293 - spider - INFO - ✅ TestConfigurationEdgeCases.test_empty_config_file - passed (0.000s)
+2025-08-31 16:08:55,293 - spider - DEBUG - 运行测试: TestConfigurationEdgeCases.test_malformed_config_file
+2025-08-31 16:08:55,293 - spider - INFO - ✅ TestConfigurationEdgeCases.test_malformed_config_file - passed (0.000s)
+2025-08-31 16:08:55,293 - spider - DEBUG - 运行测试: TestPerformance.test_concurrent_processing
+2025-08-31 16:08:55,353 - spider - INFO - ✅ TestPerformance.test_concurrent_processing - passed (0.061s)
+2025-08-31 16:08:55,354 - spider - DEBUG - 运行测试: TestDataFlow.test_data_pipeline
+2025-08-31 16:08:55,354 - spider - INFO - ✅ TestDataFlow.test_data_pipeline - passed (0.001s)
+2025-08-31 16:08:55,355 - spider - INFO - HTML报告已生成: reports/test_report.html
+2025-08-31 16:09:23,625 - spider - INFO - 所有测试模块加载成功
+2025-08-31 16:09:23,626 - spider - INFO - 开始运行所有测试
+2025-08-31 16:09:23,626 - spider - INFO - 开始运行测试套件: Spider Core Tests
+2025-08-31 16:09:23,626 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_creation - passed (0.000s)
+2025-08-31 16:09:23,626 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_defaults - passed (0.000s)
+2025-08-31 16:09:23,650 - spider - INFO - ✅ TestSpider.test_get_urls_default - passed (0.024s)
+2025-08-31 16:09:23,671 - spider - INFO - ✅ TestSpider.test_parse_response_default - passed (0.021s)
+2025-08-31 16:09:23,691 - spider - INFO - ✅ TestSpider.test_save_results - passed (0.020s)
+2025-08-31 16:09:23,711 - spider - INFO - ✅ TestSpider.test_spider_config_loading - passed (0.020s)
+2025-08-31 16:09:23,731 - spider - INFO - ✅ TestSpider.test_spider_config_not_found - passed (0.019s)
+2025-08-31 16:09:23,750 - spider - INFO - ✅ TestSpider.test_spider_initialization - passed (0.019s)
+2025-08-31 16:09:23,750 - spider - INFO - ✅ TestSpider.test_spider_invalid_target - passed (0.000s)
+2025-08-31 16:09:23,870 - spider - INFO - ✅ TestSpiderIntegration.test_spider_full_workflow - passed (0.119s)
+2025-08-31 16:09:23,870 - spider - INFO - 开始运行测试套件: Utils Module Tests
+2025-08-31 16:09:23,871 - spider - INFO - ✅ TestDataProcessor.test_clean_text - passed (0.001s)
+2025-08-31 16:09:23,872 - spider - INFO - ✅ TestDataProcessor.test_extract_by_rules - passed (0.001s)
+2025-08-31 16:09:23,872 - spider - INFO - ✅ TestDataProcessor.test_extract_images - passed (0.000s)
+2025-08-31 16:09:23,872 - spider - INFO - ✅ TestDataProcessor.test_extract_links - passed (0.000s)
+2025-08-31 16:09:23,873 - spider - INFO - ✅ TestDataProcessor.test_extract_text - passed (0.000s)
+2025-08-31 16:09:23,873 - spider - INFO - ✅ TestDataProcessor.test_parse_html - passed (0.000s)
+2025-08-31 16:09:23,873 - spider - INFO - ✅ TestDataProcessor.test_parse_html_invalid - passed (0.000s)
+2025-08-31 16:09:23,875 - spider - INFO - ✅ TestStorage.test_load_json - passed (0.001s)
+2025-08-31 16:09:23,875 - spider - INFO - ✅ TestStorage.test_load_json_nonexistent - passed (0.000s)
+2025-08-31 16:09:23,878 - spider - INFO - ✅ TestStorage.test_save_csv - passed (0.003s)
+2025-08-31 16:09:23,878 - spider - INFO - ✅ TestStorage.test_save_empty_data - passed (0.001s)
+2025-08-31 16:09:23,935 - spider - INFO - ✅ TestStorage.test_save_excel - passed (0.056s)
+2025-08-31 16:09:23,937 - spider - INFO - ✅ TestStorage.test_save_json - passed (0.002s)
+2025-08-31 16:09:23,958 - spider - INFO - ✅ TestRequestHandler.test_fetch_max_retries_exceeded - passed (0.021s)
+2025-08-31 16:09:23,980 - spider - INFO - ✅ TestRequestHandler.test_fetch_retry_on_server_error - passed (0.021s)
+2025-08-31 16:09:23,999 - spider - INFO - ✅ TestRequestHandler.test_fetch_success - passed (0.019s)
+2025-08-31 16:09:23,999 - spider - INFO - 开始运行测试套件: Mobile Module Tests
+2025-08-31 16:09:24,099 - spider - INFO - ✅ TestAndroidEmulator.test_connect_device - passed (0.100s)
+2025-08-31 16:09:24,100 - spider - INFO - ✅ TestAndroidEmulator.test_get_device_info - passed (0.000s)
+2025-08-31 16:09:24,200 - spider - INFO - ✅ TestAndroidEmulator.test_install_app - passed (0.100s)
+2025-08-31 16:09:24,300 - spider - INFO - ✅ TestAndroidEmulator.test_start_emulator - passed (0.100s)
+2025-08-31 16:09:24,400 - spider - INFO - ✅ TestAndroidEmulator.test_stop_emulator - passed (0.100s)
+2025-08-31 16:09:24,401 - spider - INFO - ✅ TestAndroidEmulator.test_take_screenshot - passed (0.000s)
+2025-08-31 16:09:24,402 - spider - INFO - ✅ TestAppiumHandler.test_click_element - passed (0.001s)
+2025-08-31 16:09:24,402 - spider - INFO - ✅ TestAppiumHandler.test_find_element - passed (0.001s)
+2025-08-31 16:09:24,403 - spider - INFO - ✅ TestAppiumHandler.test_get_text - passed (0.001s)
+2025-08-31 16:09:24,404 - spider - INFO - ✅ TestAppiumHandler.test_input_text - passed (0.001s)
+2025-08-31 16:09:24,405 - spider - INFO - ✅ TestAppiumHandler.test_scroll_down - passed (0.000s)
+2025-08-31 16:09:24,405 - spider - INFO - ✅ TestAppiumHandler.test_take_screenshot - passed (0.000s)
+2025-08-31 16:09:24,406 - spider - INFO - ✅ TestMobileSpider.test_mobile_config_loading - passed (0.000s)
+2025-08-31 16:09:24,406 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_config_creation - passed (0.000s)
+2025-08-31 16:09:24,406 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_initialization - passed (0.000s)
+2025-08-31 16:09:24,607 - spider - INFO - ✅ TestMobileSpider.test_setup_mobile_environment - passed (0.201s)
+2025-08-31 16:09:25,608 - spider - INFO - ✅ TestMobileSpiderIntegration.test_extract_list_data - passed (1.002s)
+2025-08-31 16:09:25,909 - spider - INFO - ✅ TestMobileSpiderIntegration.test_mobile_spider_full_workflow - passed (0.301s)
+2025-08-31 16:09:25,909 - spider - INFO - ✅ TestMobileSpiderIntegration.test_navigate_to_url - passed (0.000s)
+2025-08-31 16:09:25,910 - spider - INFO - ✅ TestMobileSpiderIntegration.test_scroll_and_collect - passed (0.001s)
+2025-08-31 16:09:25,910 - spider - INFO - 开始运行测试套件: Integration Tests
+2025-08-31 16:09:26,134 - spider - INFO - ✅ TestSpiderIntegration.test_end_to_end_spider_workflow - passed (0.223s)
+2025-08-31 16:09:26,254 - spider - INFO - ✅ TestExampleSpiderIntegration.test_example_spider_workflow - passed (0.120s)
+2025-08-31 16:09:26,296 - spider - INFO - ✅ TestErrorHandling.test_network_error_handling - passed (0.042s)
+2025-08-31 16:09:26,314 - spider - INFO - ✅ TestErrorHandling.test_parse_response_error - passed (0.018s)
+2025-08-31 16:09:26,314 - spider - INFO - ✅ TestConfigurationEdgeCases.test_empty_config_file - passed (0.000s)
+2025-08-31 16:09:26,314 - spider - INFO - ✅ TestConfigurationEdgeCases.test_malformed_config_file - passed (0.000s)
+2025-08-31 16:09:26,376 - spider - INFO - ✅ TestPerformance.test_concurrent_processing - passed (0.061s)
+2025-08-31 16:09:26,377 - spider - INFO - ✅ TestDataFlow.test_data_pipeline - passed (0.001s)
+2025-08-31 16:09:26,377 - spider - INFO - HTML报告已生成: reports/test_report.html
+2025-08-31 16:09:38,491 - spider - INFO - 开始运行测试套件: Quick Test Suite
+2025-08-31 16:09:38,492 - spider - DEBUG - 运行测试: QuickTestCase.test_async_assertion
+2025-08-31 16:09:38,502 - spider - INFO - ✅ QuickTestCase.test_async_assertion - passed (0.010s)
+2025-08-31 16:09:38,502 - spider - DEBUG - 运行测试: QuickTestCase.test_async_operations
+2025-08-31 16:09:38,552 - spider - INFO - ✅ QuickTestCase.test_async_operations - passed (0.050s)
+2025-08-31 16:09:38,552 - spider - DEBUG - 运行测试: QuickTestCase.test_basic_assertions
+2025-08-31 16:09:38,552 - spider - INFO - ✅ QuickTestCase.test_basic_assertions - passed (0.000s)
+2025-08-31 16:09:38,552 - spider - DEBUG - 运行测试: QuickTestCase.test_exception_assertion
+2025-08-31 16:09:38,552 - spider - INFO - ✅ QuickTestCase.test_exception_assertion - passed (0.000s)
+2025-08-31 16:09:38,896 - spider - INFO - 开始运行所有测试
+2025-08-31 16:09:38,896 - spider - INFO - 开始运行测试套件: Spider Core Tests
+2025-08-31 16:09:38,896 - spider - DEBUG - 运行测试: TestSpiderConfig.test_spider_config_creation
+2025-08-31 16:09:38,896 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_creation - passed (0.000s)
+2025-08-31 16:09:38,896 - spider - DEBUG - 运行测试: TestSpiderConfig.test_spider_config_defaults
+2025-08-31 16:09:38,896 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_defaults - passed (0.000s)
+2025-08-31 16:09:38,896 - spider - DEBUG - 运行测试: TestSpider.test_get_urls_default
+2025-08-31 16:09:38,922 - spider - INFO - ✅ TestSpider.test_get_urls_default - passed (0.026s)
+2025-08-31 16:09:38,922 - spider - DEBUG - 运行测试: TestSpider.test_parse_response_default
+2025-08-31 16:09:38,943 - spider - INFO - ✅ TestSpider.test_parse_response_default - passed (0.020s)
+2025-08-31 16:09:38,943 - spider - DEBUG - 运行测试: TestSpider.test_save_results
+2025-08-31 16:09:38,963 - spider - INFO - ✅ TestSpider.test_save_results - passed (0.020s)
+2025-08-31 16:09:38,963 - spider - DEBUG - 运行测试: TestSpider.test_spider_config_loading
+2025-08-31 16:09:38,982 - spider - INFO - ✅ TestSpider.test_spider_config_loading - passed (0.019s)
+2025-08-31 16:09:38,982 - spider - DEBUG - 运行测试: TestSpider.test_spider_config_not_found
+2025-08-31 16:09:39,001 - spider - INFO - ✅ TestSpider.test_spider_config_not_found - passed (0.019s)
+2025-08-31 16:09:39,001 - spider - DEBUG - 运行测试: TestSpider.test_spider_initialization
+2025-08-31 16:09:39,020 - spider - INFO - ✅ TestSpider.test_spider_initialization - passed (0.019s)
+2025-08-31 16:09:39,020 - spider - DEBUG - 运行测试: TestSpider.test_spider_invalid_target
+2025-08-31 16:09:39,021 - spider - INFO - ✅ TestSpider.test_spider_invalid_target - passed (0.000s)
+2025-08-31 16:09:39,021 - spider - DEBUG - 运行测试: TestSpiderIntegration.test_spider_full_workflow
+2025-08-31 16:09:39,140 - spider - INFO - ✅ TestSpiderIntegration.test_spider_full_workflow - passed (0.119s)
+2025-08-31 16:09:39,140 - spider - INFO - 开始运行测试套件: Utils Module Tests
+2025-08-31 16:09:39,140 - spider - DEBUG - 运行测试: TestDataProcessor.test_clean_text
+2025-08-31 16:09:39,141 - spider - INFO - ✅ TestDataProcessor.test_clean_text - passed (0.001s)
+2025-08-31 16:09:39,141 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_by_rules
+2025-08-31 16:09:39,142 - spider - INFO - ✅ TestDataProcessor.test_extract_by_rules - passed (0.001s)
+2025-08-31 16:09:39,142 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_images
+2025-08-31 16:09:39,142 - spider - INFO - ✅ TestDataProcessor.test_extract_images - passed (0.000s)
+2025-08-31 16:09:39,143 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_links
+2025-08-31 16:09:39,143 - spider - INFO - ✅ TestDataProcessor.test_extract_links - passed (0.000s)
+2025-08-31 16:09:39,143 - spider - DEBUG - 运行测试: TestDataProcessor.test_extract_text
+2025-08-31 16:09:39,143 - spider - INFO - ✅ TestDataProcessor.test_extract_text - passed (0.000s)
+2025-08-31 16:09:39,143 - spider - DEBUG - 运行测试: TestDataProcessor.test_parse_html
+2025-08-31 16:09:39,144 - spider - INFO - ✅ TestDataProcessor.test_parse_html - passed (0.000s)
+2025-08-31 16:09:39,144 - spider - DEBUG - 运行测试: TestDataProcessor.test_parse_html_invalid
+2025-08-31 16:09:39,144 - spider - INFO - ✅ TestDataProcessor.test_parse_html_invalid - passed (0.000s)
+2025-08-31 16:09:39,144 - spider - DEBUG - 运行测试: TestStorage.test_load_json
+2025-08-31 16:09:39,146 - spider - INFO - ✅ TestStorage.test_load_json - passed (0.002s)
+2025-08-31 16:09:39,146 - spider - DEBUG - 运行测试: TestStorage.test_load_json_nonexistent
+2025-08-31 16:09:39,146 - spider - INFO - ✅ TestStorage.test_load_json_nonexistent - passed (0.000s)
+2025-08-31 16:09:39,146 - spider - DEBUG - 运行测试: TestStorage.test_save_csv
+2025-08-31 16:09:39,149 - spider - INFO - ✅ TestStorage.test_save_csv - passed (0.003s)
+2025-08-31 16:09:39,149 - spider - DEBUG - 运行测试: TestStorage.test_save_empty_data
+2025-08-31 16:09:39,149 - spider - INFO - ✅ TestStorage.test_save_empty_data - passed (0.001s)
+2025-08-31 16:09:39,149 - spider - DEBUG - 运行测试: TestStorage.test_save_excel
+2025-08-31 16:09:39,206 - spider - INFO - ✅ TestStorage.test_save_excel - passed (0.057s)
+2025-08-31 16:09:39,206 - spider - DEBUG - 运行测试: TestStorage.test_save_json
+2025-08-31 16:09:39,208 - spider - INFO - ✅ TestStorage.test_save_json - passed (0.002s)
+2025-08-31 16:09:39,208 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_max_retries_exceeded
+2025-08-31 16:09:39,228 - spider - INFO - ✅ TestRequestHandler.test_fetch_max_retries_exceeded - passed (0.020s)
+2025-08-31 16:09:39,228 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_retry_on_server_error
+2025-08-31 16:09:39,251 - spider - INFO - ✅ TestRequestHandler.test_fetch_retry_on_server_error - passed (0.023s)
+2025-08-31 16:09:39,251 - spider - DEBUG - 运行测试: TestRequestHandler.test_fetch_success
+2025-08-31 16:09:39,271 - spider - INFO - ✅ TestRequestHandler.test_fetch_success - passed (0.020s)
+2025-08-31 16:09:39,271 - spider - INFO - 开始运行测试套件: Mobile Module Tests
+2025-08-31 16:09:39,271 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_connect_device
+2025-08-31 16:09:39,372 - spider - INFO - ✅ TestAndroidEmulator.test_connect_device - passed (0.100s)
+2025-08-31 16:09:39,372 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_get_device_info
+2025-08-31 16:09:39,372 - spider - INFO - ✅ TestAndroidEmulator.test_get_device_info - passed (0.000s)
+2025-08-31 16:09:39,372 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_install_app
+2025-08-31 16:09:39,472 - spider - INFO - ✅ TestAndroidEmulator.test_install_app - passed (0.100s)
+2025-08-31 16:09:39,472 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_start_emulator
+2025-08-31 16:09:39,572 - spider - INFO - ✅ TestAndroidEmulator.test_start_emulator - passed (0.100s)
+2025-08-31 16:09:39,573 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_stop_emulator
+2025-08-31 16:09:39,673 - spider - INFO - ✅ TestAndroidEmulator.test_stop_emulator - passed (0.100s)
+2025-08-31 16:09:39,673 - spider - DEBUG - 运行测试: TestAndroidEmulator.test_take_screenshot
+2025-08-31 16:09:39,673 - spider - INFO - ✅ TestAndroidEmulator.test_take_screenshot - passed (0.000s)
+2025-08-31 16:09:39,673 - spider - DEBUG - 运行测试: TestAppiumHandler.test_click_element
+2025-08-31 16:09:39,674 - spider - INFO - ✅ TestAppiumHandler.test_click_element - passed (0.001s)
+2025-08-31 16:09:39,674 - spider - DEBUG - 运行测试: TestAppiumHandler.test_find_element
+2025-08-31 16:09:39,675 - spider - INFO - ✅ TestAppiumHandler.test_find_element - passed (0.001s)
+2025-08-31 16:09:39,675 - spider - DEBUG - 运行测试: TestAppiumHandler.test_get_text
+2025-08-31 16:09:39,676 - spider - INFO - ✅ TestAppiumHandler.test_get_text - passed (0.001s)
+2025-08-31 16:09:39,676 - spider - DEBUG - 运行测试: TestAppiumHandler.test_input_text
+2025-08-31 16:09:39,677 - spider - INFO - ✅ TestAppiumHandler.test_input_text - passed (0.001s)
+2025-08-31 16:09:39,677 - spider - DEBUG - 运行测试: TestAppiumHandler.test_scroll_down
+2025-08-31 16:09:39,677 - spider - INFO - ✅ TestAppiumHandler.test_scroll_down - passed (0.000s)
+2025-08-31 16:09:39,677 - spider - DEBUG - 运行测试: TestAppiumHandler.test_take_screenshot
+2025-08-31 16:09:39,678 - spider - INFO - ✅ TestAppiumHandler.test_take_screenshot - passed (0.000s)
+2025-08-31 16:09:39,678 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_config_loading
+2025-08-31 16:09:39,678 - spider - INFO - ✅ TestMobileSpider.test_mobile_config_loading - passed (0.000s)
+2025-08-31 16:09:39,678 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_spider_config_creation
+2025-08-31 16:09:39,678 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_config_creation - passed (0.000s)
+2025-08-31 16:09:39,678 - spider - DEBUG - 运行测试: TestMobileSpider.test_mobile_spider_initialization
+2025-08-31 16:09:39,678 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_initialization - passed (0.000s)
+2025-08-31 16:09:39,678 - spider - DEBUG - 运行测试: TestMobileSpider.test_setup_mobile_environment
+2025-08-31 16:09:39,879 - spider - INFO - ✅ TestMobileSpider.test_setup_mobile_environment - passed (0.201s)
+2025-08-31 16:09:39,879 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_extract_list_data
+2025-08-31 16:09:40,881 - spider - INFO - ✅ TestMobileSpiderIntegration.test_extract_list_data - passed (1.002s)
+2025-08-31 16:09:40,881 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_mobile_spider_full_workflow
+2025-08-31 16:09:41,182 - spider - INFO - ✅ TestMobileSpiderIntegration.test_mobile_spider_full_workflow - passed (0.301s)
+2025-08-31 16:09:41,182 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_navigate_to_url
+2025-08-31 16:09:41,182 - spider - INFO - ✅ TestMobileSpiderIntegration.test_navigate_to_url - passed (0.000s)
+2025-08-31 16:09:41,182 - spider - DEBUG - 运行测试: TestMobileSpiderIntegration.test_scroll_and_collect
+2025-08-31 16:09:41,182 - spider - INFO - ✅ TestMobileSpiderIntegration.test_scroll_and_collect - passed (0.000s)
+2025-08-31 16:09:41,182 - spider - INFO - 开始运行测试套件: Integration Tests
+2025-08-31 16:09:41,182 - spider - DEBUG - 运行测试: TestSpiderIntegration.test_end_to_end_spider_workflow
+2025-08-31 16:09:41,403 - spider - INFO - ✅ TestSpiderIntegration.test_end_to_end_spider_workflow - passed (0.221s)
+2025-08-31 16:09:41,403 - spider - DEBUG - 运行测试: TestExampleSpiderIntegration.test_example_spider_workflow
+2025-08-31 16:09:41,523 - spider - INFO - ✅ TestExampleSpiderIntegration.test_example_spider_workflow - passed (0.120s)
+2025-08-31 16:09:41,523 - spider - DEBUG - 运行测试: TestErrorHandling.test_network_error_handling
+2025-08-31 16:09:41,562 - spider - INFO - ✅ TestErrorHandling.test_network_error_handling - passed (0.039s)
+2025-08-31 16:09:41,562 - spider - DEBUG - 运行测试: TestErrorHandling.test_parse_response_error
+2025-08-31 16:09:41,579 - spider - INFO - ✅ TestErrorHandling.test_parse_response_error - passed (0.017s)
+2025-08-31 16:09:41,579 - spider - DEBUG - 运行测试: TestConfigurationEdgeCases.test_empty_config_file
+2025-08-31 16:09:41,579 - spider - INFO - ✅ TestConfigurationEdgeCases.test_empty_config_file - passed (0.000s)
+2025-08-31 16:09:41,579 - spider - DEBUG - 运行测试: TestConfigurationEdgeCases.test_malformed_config_file
+2025-08-31 16:09:41,580 - spider - INFO - ✅ TestConfigurationEdgeCases.test_malformed_config_file - passed (0.000s)
+2025-08-31 16:09:41,580 - spider - DEBUG - 运行测试: TestPerformance.test_concurrent_processing
+2025-08-31 16:09:41,640 - spider - INFO - ✅ TestPerformance.test_concurrent_processing - passed (0.060s)
+2025-08-31 16:09:41,640 - spider - DEBUG - 运行测试: TestDataFlow.test_data_pipeline
+2025-08-31 16:09:41,641 - spider - INFO - ✅ TestDataFlow.test_data_pipeline - passed (0.001s)
+2025-08-31 16:09:41,641 - spider - INFO - HTML报告已生成: reports/test_report.html
+2025-08-31 16:09:41,642 - spider - INFO - JSON报告已生成: reports/test_report.json
+2025-08-31 16:09:41,642 - spider - INFO - JUnit XML报告已生成: reports/test_results.xml
+2025-08-31 16:10:37,516 - spider - INFO - 开始运行测试套件: Quick Test Suite
+2025-08-31 16:10:37,516 - spider - DEBUG - 运行测试: QuickTestCase.test_async_assertion
+2025-08-31 16:10:37,526 - spider - INFO - ✅ QuickTestCase.test_async_assertion - passed (0.010s)
+2025-08-31 16:10:37,527 - spider - DEBUG - 运行测试: QuickTestCase.test_async_operations
+2025-08-31 16:10:37,577 - spider - INFO - ✅ QuickTestCase.test_async_operations - passed (0.050s)
+2025-08-31 16:10:37,577 - spider - DEBUG - 运行测试: QuickTestCase.test_basic_assertions
+2025-08-31 16:10:37,577 - spider - INFO - ✅ QuickTestCase.test_basic_assertions - passed (0.000s)
+2025-08-31 16:10:37,577 - spider - DEBUG - 运行测试: QuickTestCase.test_exception_assertion
+2025-08-31 16:10:37,577 - spider - INFO - ✅ QuickTestCase.test_exception_assertion - passed (0.000s)
+2025-08-31 16:10:37,996 - spider - INFO - 开始爬取目标: test_real
+2025-08-31 16:10:37,996 - spider - INFO - 获取到 3 个URL
+2025-08-31 16:10:40,024 - spider - INFO - 数据已保存到: test_output/test_real_results.json
+2025-08-31 16:10:40,025 - spider - INFO - 保存了 3 条有效数据
+2025-08-31 16:10:40,025 - spider - INFO - 爬虫任务完成
+2025-08-31 16:10:48,978 - spider - INFO - 所有测试模块加载成功
+2025-08-31 16:10:48,978 - spider - INFO - 开始运行所有测试
+2025-08-31 16:10:48,979 - spider - INFO - 开始运行测试套件: Spider Core Tests
+2025-08-31 16:10:48,979 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_creation - passed (0.000s)
+2025-08-31 16:10:48,979 - spider - INFO - ✅ TestSpiderConfig.test_spider_config_defaults - passed (0.000s)
+2025-08-31 16:10:49,001 - spider - INFO - ✅ TestSpider.test_get_urls_default - passed (0.023s)
+2025-08-31 16:10:49,021 - spider - INFO - ✅ TestSpider.test_parse_response_default - passed (0.020s)
+2025-08-31 16:10:49,041 - spider - INFO - ✅ TestSpider.test_save_results - passed (0.020s)
+2025-08-31 16:10:49,061 - spider - INFO - ✅ TestSpider.test_spider_config_loading - passed (0.019s)
+2025-08-31 16:10:49,080 - spider - INFO - ✅ TestSpider.test_spider_config_not_found - passed (0.019s)
+2025-08-31 16:10:49,098 - spider - INFO - ✅ TestSpider.test_spider_initialization - passed (0.019s)
+2025-08-31 16:10:49,099 - spider - INFO - ✅ TestSpider.test_spider_invalid_target - passed (0.000s)
+2025-08-31 16:10:49,218 - spider - INFO - ✅ TestSpiderIntegration.test_spider_full_workflow - passed (0.119s)
+2025-08-31 16:10:49,218 - spider - INFO - 开始运行测试套件: Utils Module Tests
+2025-08-31 16:10:49,219 - spider - INFO - ✅ TestDataProcessor.test_clean_text - passed (0.001s)
+2025-08-31 16:10:49,220 - spider - INFO - ✅ TestDataProcessor.test_extract_by_rules - passed (0.001s)
+2025-08-31 16:10:49,220 - spider - INFO - ✅ TestDataProcessor.test_extract_images - passed (0.000s)
+2025-08-31 16:10:49,221 - spider - INFO - ✅ TestDataProcessor.test_extract_links - passed (0.000s)
+2025-08-31 16:10:49,221 - spider - INFO - ✅ TestDataProcessor.test_extract_text - passed (0.000s)
+2025-08-31 16:10:49,222 - spider - INFO - ✅ TestDataProcessor.test_parse_html - passed (0.000s)
+2025-08-31 16:10:49,222 - spider - INFO - ✅ TestDataProcessor.test_parse_html_invalid - passed (0.000s)
+2025-08-31 16:10:49,225 - spider - INFO - ✅ TestStorage.test_load_json - passed (0.003s)
+2025-08-31 16:10:49,226 - spider - INFO - ✅ TestStorage.test_load_json_nonexistent - passed (0.000s)
+2025-08-31 16:10:49,228 - spider - INFO - ✅ TestStorage.test_save_csv - passed (0.003s)
+2025-08-31 16:10:49,229 - spider - INFO - ✅ TestStorage.test_save_empty_data - passed (0.001s)
+2025-08-31 16:10:49,284 - spider - INFO - ✅ TestStorage.test_save_excel - passed (0.055s)
+2025-08-31 16:10:49,285 - spider - INFO - ✅ TestStorage.test_save_json - passed (0.001s)
+2025-08-31 16:10:49,306 - spider - INFO - ✅ TestRequestHandler.test_fetch_max_retries_exceeded - passed (0.021s)
+2025-08-31 16:10:49,327 - spider - INFO - ✅ TestRequestHandler.test_fetch_retry_on_server_error - passed (0.021s)
+2025-08-31 16:10:49,347 - spider - INFO - ✅ TestRequestHandler.test_fetch_success - passed (0.019s)
+2025-08-31 16:10:49,347 - spider - INFO - 开始运行测试套件: Mobile Module Tests
+2025-08-31 16:10:49,447 - spider - INFO - ✅ TestAndroidEmulator.test_connect_device - passed (0.100s)
+2025-08-31 16:10:49,447 - spider - INFO - ✅ TestAndroidEmulator.test_get_device_info - passed (0.000s)
+2025-08-31 16:10:49,547 - spider - INFO - ✅ TestAndroidEmulator.test_install_app - passed (0.100s)
+2025-08-31 16:10:49,648 - spider - INFO - ✅ TestAndroidEmulator.test_start_emulator - passed (0.100s)
+2025-08-31 16:10:49,748 - spider - INFO - ✅ TestAndroidEmulator.test_stop_emulator - passed (0.100s)
+2025-08-31 16:10:49,748 - spider - INFO - ✅ TestAndroidEmulator.test_take_screenshot - passed (0.000s)
+2025-08-31 16:10:49,749 - spider - INFO - ✅ TestAppiumHandler.test_click_element - passed (0.001s)
+2025-08-31 16:10:49,750 - spider - INFO - ✅ TestAppiumHandler.test_find_element - passed (0.001s)
+2025-08-31 16:10:49,750 - spider - INFO - ✅ TestAppiumHandler.test_get_text - passed (0.000s)
+2025-08-31 16:10:49,751 - spider - INFO - ✅ TestAppiumHandler.test_input_text - passed (0.001s)
+2025-08-31 16:10:49,752 - spider - INFO - ✅ TestAppiumHandler.test_scroll_down - passed (0.001s)
+2025-08-31 16:10:49,753 - spider - INFO - ✅ TestAppiumHandler.test_take_screenshot - passed (0.001s)
+2025-08-31 16:10:49,753 - spider - INFO - ✅ TestMobileSpider.test_mobile_config_loading - passed (0.000s)
+2025-08-31 16:10:49,753 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_config_creation - passed (0.000s)
+2025-08-31 16:10:49,753 - spider - INFO - ✅ TestMobileSpider.test_mobile_spider_initialization - passed (0.000s)
+2025-08-31 16:10:49,954 - spider - INFO - ✅ TestMobileSpider.test_setup_mobile_environment - passed (0.201s)
+2025-08-31 16:10:50,956 - spider - INFO - ✅ TestMobileSpiderIntegration.test_extract_list_data - passed (1.002s)
+2025-08-31 16:10:51,256 - spider - INFO - ✅ TestMobileSpiderIntegration.test_mobile_spider_full_workflow - passed (0.301s)
+2025-08-31 16:10:51,257 - spider - INFO - ✅ TestMobileSpiderIntegration.test_navigate_to_url - passed (0.000s)
+2025-08-31 16:10:51,257 - spider - INFO - ✅ TestMobileSpiderIntegration.test_scroll_and_collect - passed (0.001s)
+2025-08-31 16:10:51,258 - spider - INFO - 开始运行测试套件: Integration Tests
+2025-08-31 16:10:51,479 - spider - INFO - ✅ TestSpiderIntegration.test_end_to_end_spider_workflow - passed (0.221s)
+2025-08-31 16:10:51,598 - spider - INFO - ✅ TestExampleSpiderIntegration.test_example_spider_workflow - passed (0.120s)
+2025-08-31 16:10:51,635 - spider - INFO - ✅ TestErrorHandling.test_network_error_handling - passed (0.036s)
+2025-08-31 16:10:51,652 - spider - INFO - ✅ TestErrorHandling.test_parse_response_error - passed (0.017s)
+2025-08-31 16:10:51,652 - spider - INFO - ✅ TestConfigurationEdgeCases.test_empty_config_file - passed (0.000s)
+2025-08-31 16:10:51,653 - spider - INFO - ✅ TestConfigurationEdgeCases.test_malformed_config_file - passed (0.000s)
+2025-08-31 16:10:51,712 - spider - INFO - ✅ TestPerformance.test_concurrent_processing - passed (0.059s)
+2025-08-31 16:10:51,713 - spider - INFO - ✅ TestDataFlow.test_data_pipeline - passed (0.001s)
+2025-08-31 16:10:51,713 - spider - INFO - HTML报告已生成: reports/test_report.html

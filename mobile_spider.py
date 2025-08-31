@@ -70,7 +70,25 @@ class MobileSpider(Spider):
             base_config = self.config.__dict__
             mobile_config_dict = {**base_config, **target_config}
             
-            return MobileSpiderConfig(**mobile_config_dict)
+            # 过滤掉SpiderConfig不支持的参数
+            spider_config_fields = {
+                'target', 'base_url', 'headers', 'delay', 'timeout', 
+                'max_retries', 'output_format', 'output_path'
+            }
+            
+            # 分离基础配置和移动端配置
+            base_params = {k: v for k, v in mobile_config_dict.items() if k in spider_config_fields}
+            mobile_params = {k: v for k, v in mobile_config_dict.items() if k not in spider_config_fields}
+            
+            # 创建MobileSpiderConfig，先传入基础参数，再设置移动端参数
+            mobile_config = MobileSpiderConfig(**base_params)
+            
+            # 设置移动端特有参数
+            for key, value in mobile_params.items():
+                if hasattr(mobile_config, key):
+                    setattr(mobile_config, key, value)
+            
+            return mobile_config
         except Exception as e:
             if self.logger:
                 self.logger.error(f"加载移动端配置失败: {e}")

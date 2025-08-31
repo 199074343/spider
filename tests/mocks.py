@@ -68,6 +68,19 @@ class MockHttpResponse:
         return self._text.encode('utf-8')
 
 
+class MockHttpContextManager:
+    """Mock HTTP上下文管理器"""
+    
+    def __init__(self, response):
+        self.response = response
+    
+    async def __aenter__(self):
+        return self.response
+    
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        pass
+
+
 class MockHttpSession:
     """模拟HTTP会话"""
     
@@ -84,8 +97,8 @@ class MockHttpSession:
         """设置默认响应"""
         self.default_response = response
     
-    async def request(self, method: str, url: str, **kwargs):
-        """模拟请求"""
+    def request(self, method: str, url: str, **kwargs):
+        """模拟请求 - 返回上下文管理器"""
         request_info = {
             'method': method,
             'url': url,
@@ -95,14 +108,37 @@ class MockHttpSession:
         
         # 返回预设的响应
         if url in self.responses:
+            response = self.responses[url]
+        else:
+            response = self.default_response
+            
+        return MockHttpContextManager(response)
+    
+    async def get(self, url: str, **kwargs):
+        """直接返回响应（非上下文管理器版本）"""
+        request_info = {
+            'method': 'GET',
+            'url': url,
+            'kwargs': kwargs
+        }
+        self.requests_made.append(request_info)
+        
+        if url in self.responses:
             return self.responses[url]
         return self.default_response
     
-    async def get(self, url: str, **kwargs):
-        return await self.request('GET', url, **kwargs)
-    
     async def post(self, url: str, **kwargs):
-        return await self.request('POST', url, **kwargs)
+        """直接返回响应（非上下文管理器版本）"""
+        request_info = {
+            'method': 'POST',
+            'url': url,
+            'kwargs': kwargs
+        }
+        self.requests_made.append(request_info)
+        
+        if url in self.responses:
+            return self.responses[url]
+        return self.default_response
     
     def get_requests(self) -> List[Dict]:
         """获取所有请求记录"""
